@@ -1,0 +1,18 @@
+{
+  "name": "hardware-shop-local-backend-proof",
+  "private": true,
+  "type": "module",
+  "engines": {"node": ">=22"},
+  "scripts": {
+    "test": "node --test --test-concurrency=1 test/*.test.mjs",
+    "capacity": "node capacity.mjs",
+    "dev": "node web-server.mjs",
+    "dev:shared": "node local-setup.mjs --synthetic",
+    "build:web": "node build-web.mjs",
+    "test:browser": "node browser-tests.mjs",
+    "capacity:retention": "node retention-capacity.mjs",
+    "capacity:admission": "node admission-storage.mjs",
+    "capacity:phase4a": "node phase4a-capacity.mjs"
+  },
+  "devDependencies": {"miniflare": "4.20260730.0"}
+}

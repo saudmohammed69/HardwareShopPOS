@@ -1,0 +1,11 @@
+{
+  "name": "hardware-shop-sync-rules-tests",
+  "private": true,
+  "type": "module",
+  "scripts": { "test": "node --test sync-rules.test.mjs" },
+  "devDependencies": {
+    "@firebase/rules-unit-testing": "5.0.2",
+    "firebase": "12.19.0",
+    "firebase-tools": "15.32.1"
+  }
+}

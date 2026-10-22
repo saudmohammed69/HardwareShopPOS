@@ -1,0 +1,467 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function member(shopId) {
+      return request.auth != null &&
+        exists(/databases/$(database)/documents/shops/$(shopId)/members/$(request.auth.uid)) &&
+        get(/databases/$(database)/documents/shops/$(shopId)/members/$(request.auth.uid)).data.enabled == true;
+    }
+    function owner(shopId) {
+      return member(shopId) &&
+        get(/databases/$(database)/documents/shops/$(shopId)/members/$(request.auth.uid)).data.get('role', 'WORKER') == 'OWNER';
+    }
+    function printer(shopId) {
+      return member(shopId) &&
+        get(/databases/$(database)/documents/shops/$(shopId)/members/$(request.auth.uid)).data.get('printer', false) == true;
+    }
+    // A password account can create only its own private shop namespace. Existing shops retain administrator membership.
+    match /shops/{shopId}/members/{uid} {
+      allow get: if request.auth != null && request.auth.uid == uid;
+      allow list, update, delete: if false;
+      allow create: if passwordAccount() && uid == request.auth.uid &&
+        shopId == "account_" + uid &&
+        request.resource.data.keys().hasOnly(["enabled", "role", "printer"]) &&
+        request.resource.data.enabled == true && request.resource.data.role == "OWNER" &&
+        request.resource.data.printer == true &&
+        getAfter(/databases/$(database)/documents/shops/$(shopId)).data.ownerUid == uid;
+    }
+    function passwordAccount() {
+      return request.auth != null && request.auth.token.firebase.sign_in_provider == 'password';
+    }
+    match /cloudAccounts/{uid} {
+      allow get: if request.auth != null && request.auth.uid == uid;
+      allow list, delete: if false;
+      allow create: if passwordAccount() && request.auth.uid == uid &&
+        request.resource.data.keys().hasOnly(['shopId']) && request.resource.data.shopId is string &&
+        getAfter(/databases/$(database)/documents/shops/$(request.resource.data.shopId)/members/$(uid)).data.enabled == true &&
+        getAfter(/databases/$(database)/documents/shops/$(request.resource.data.shopId)/members/$(uid)).data.role == 'OWNER';
+      allow update: if passwordAccount() && request.auth.uid == uid && request.resource.data == resource.data;
+    }
+    match /shops/{shopId} {
+      allow get: if member(shopId) || (passwordAccount() && shopId == 'account_' + request.auth.uid);
+      allow create: if passwordAccount() && shopId == 'account_' + request.auth.uid &&
+        request.resource.data.keys().hasOnly(['ownerUid']) && request.resource.data.ownerUid == request.auth.uid;
+      allow list, update, delete: if false;
+    }
+    match /shops/{shopId}/config/{document} {
+      allow read: if member(shopId);
+      allow create, update: if document == 'device' && (owner(shopId) || printer(shopId));
+      allow delete: if false;
+    }
+    match /shops/{shopId}/printJobs/{jobId} {
+      allow read: if member(shopId);
+      allow create: if owner(shopId) && request.resource.data.jobId == jobId &&
+        request.resource.data.receiptPayload is string &&
+        request.resource.data.receiptPayload.size() < 900000 &&
+        request.resource.data.status == 'PENDING';
+      // The authorized printer can acknowledge a job without editing its receipt.
+      allow update: if (owner(shopId) || printer(shopId)) &&
+        request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+          'status','claimToken','leaseUntil','lastError','printedAt'
+        ]) && request.resource.data.status in ['RECEIVED','PRINTING','PRINTED','FAILED'];
+      // Existing explicit owner-confirmed retry flow.
+      allow update: if owner(shopId) && request.resource.data.status == 'PENDING' &&
+        resource.data.status in ['FAILED','RECEIVED','PRINTING'] &&
+        request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+          'status','claimToken','leaseUntil','lastError','receiptPayload','retryCount'
+        ]) && request.resource.data.receiptPayload is string &&
+        request.resource.data.receiptPayload.size() < 900000;
+      allow delete: if false;
+    }
+    // Retired prototype: JSON strings cannot enforce field-level permissions.
+    // Keep these paths closed until a validated structured transport is ready.
+    match /shops/{shopId}/syncRecords/{recordId} { allow read, write: if false; }
+    match /shops/{shopId}/syncPublic/{recordId} { allow read, write: if false; }
+    function fields_audit_logs(f) { return f is map &&
+      f.keys().hasOnly(["actionType","actorId","actorName","actorRole","afterValue","beforeValue","billId","createdAt","customerId","entityType","notes","productId","reason"]) &&
+      f.keys().hasAll(["actionType","actorName","actorRole","createdAt","entityType","notes","reason"]) &&
+      (f.get("actionType",null) is string && f.get("actionType",null).size() <= 50000) &&
+      (f.get("actorId",null) == null || (f.get("actorId",null) is string && f.get("actorId",null).size() <= 50000 && syncId(f.get("actorId",null)))) &&
+      (f.get("actorName",null) is string && f.get("actorName",null).size() <= 50000) &&
+      (f.get("actorRole",null) is string && f.get("actorRole",null).size() <= 50000) &&
+      (f.get("afterValue",null) == null || (f.get("afterValue",null) is string && f.get("afterValue",null).size() <= 50000)) &&
+      (f.get("beforeValue",null) == null || (f.get("beforeValue",null) is string && f.get("beforeValue",null).size() <= 50000)) &&
+      (f.get("billId",null) == null || (f.get("billId",null) is string && f.get("billId",null).size() <= 50000 && syncId(f.get("billId",null)))) &&
+      (f.get("createdAt",null) is int) &&
+      (f.get("customerId",null) == null || (f.get("customerId",null) is string && f.get("customerId",null).size() <= 50000 && syncId(f.get("customerId",null)))) &&
+      (f.get("entityType",null) is string && f.get("entityType",null).size() <= 50000) &&
+      (f.get("notes",null) is string && f.get("notes",null).size() <= 50000) &&
+      (f.get("productId",null) == null || (f.get("productId",null) is string && f.get("productId",null).size() <= 50000 && syncId(f.get("productId",null)))) &&
+      (f.get("reason",null) is string && f.get("reason",null).size() <= 50000); }
+    function fields_bill_items(f) { return f is map &&
+      f.keys().hasOnly(["billId","createdAt","gstAmountPaisa","gstRateBp","itemTotalPaisa","productId","productName","productSize","productUnit","quantity","unitPricePaisa","isPipe","pipeLengths","pipeFeet","pipeFootPricePaisa"]) &&
+      (f.get("isPipe",0) is int && f.get("isPipe",0) >= 0) &&
+      (f.get("pipeLengths",0) is int && f.get("pipeLengths",0) >= 0) &&
+      (f.get("pipeFeet",0) is number && f.get("pipeFeet",0) >= 0) &&
+      (f.get("pipeFootPricePaisa",0) is int && f.get("pipeFootPricePaisa",0) >= 0) &&
+      f.keys().hasAll(["billId","createdAt","gstAmountPaisa","gstRateBp","itemTotalPaisa","productId","productName","productSize","productUnit","quantity","unitPricePaisa"]) &&
+      (f.get("billId",null) is string && f.get("billId",null).size() <= 50000 && syncId(f.get("billId",null))) &&
+      (f.get("createdAt",null) is int) &&
+      (f.get("gstAmountPaisa",null) is int) &&
+      (f.get("gstRateBp",null) is int && f.get("gstRateBp",null) >= 0 && f.get("gstRateBp",null) <= 10000) &&
+      (f.get("itemTotalPaisa",null) is int) &&
+      (f.get("productId",null) is string && f.get("productId",null).size() <= 50000 && syncId(f.get("productId",null))) &&
+      (f.get("productName",null) is string && f.get("productName",null).size() <= 50000) &&
+      (f.get("productSize",null) is string && f.get("productSize",null).size() <= 50000) &&
+      (f.get("productUnit",null) is string && f.get("productUnit",null).size() <= 50000) &&
+      (f.get("quantity",null) is number && !math.isNaN(f.get("quantity",null) - f.get("quantity",null))) &&
+      (f.get("unitPricePaisa",null) is int && f.get("unitPricePaisa",null) >= 0); }
+    function fields_bills(f) { return f is map &&
+      f.keys().hasOnly(["billNumber","cancellationReason","createdAt","creditPaisa","customerGstNumber","customerId","customerName","customerPhone","discountNote","discountPaisa","gstAmountPaisa","gstEnabled","notes","paidPaisa","paymentMethod","shopGstNumber","status","subtotalPaisa","totalPaisa","updatedAt","workerId","workerName"]) &&
+      f.keys().hasAll(["billNumber","cancellationReason","createdAt","creditPaisa","customerGstNumber","customerName","customerPhone","discountNote","discountPaisa","gstAmountPaisa","gstEnabled","notes","paidPaisa","paymentMethod","shopGstNumber","status","subtotalPaisa","totalPaisa","updatedAt","workerName"]) &&
+      (f.get("billNumber",null) is string && f.get("billNumber",null).size() <= 50000) &&
+      (f.get("cancellationReason",null) is string && f.get("cancellationReason",null).size() <= 50000) &&
+      (f.get("createdAt",null) is int) &&
+      (f.get("creditPaisa",null) is int) &&
+      (f.get("customerGstNumber",null) is string && f.get("customerGstNumber",null).size() <= 50000) &&
+      (f.get("customerId",null) == null || (f.get("customerId",null) is string && f.get("customerId",null).size() <= 50000 && syncId(f.get("customerId",null)))) &&
+      (f.get("customerName",null) is string && f.get("customerName",null).size() <= 50000) &&
+      (f.get("customerPhone",null) is string && f.get("customerPhone",null).size() <= 50000) &&
+      (f.get("discountNote",null) is string && f.get("discountNote",null).size() <= 50000) &&
+      (f.get("discountPaisa",null) is int) &&
+      (f.get("gstAmountPaisa",null) is int) &&
+      (f.get("gstEnabled",null) is int && f.get("gstEnabled",null) in [0,1]) &&
+      (f.get("notes",null) is string && f.get("notes",null).size() <= 50000) &&
+      (f.get("paidPaisa",null) is int) &&
+      (f.get("paymentMethod",null) is string && f.get("paymentMethod",null).size() <= 50000) &&
+      (f.get("shopGstNumber",null) is string && f.get("shopGstNumber",null).size() <= 50000) &&
+      (f.get("status",null) is string && f.get("status",null).size() <= 50000) &&
+      (f.get("subtotalPaisa",null) is int) &&
+      (f.get("totalPaisa",null) is int) &&
+      (f.get("updatedAt",null) is int) &&
+      (f.get("workerId",null) == null || (f.get("workerId",null) is string && f.get("workerId",null).size() <= 50000 && syncId(f.get("workerId",null)))) &&
+      (f.get("workerName",null) is string && f.get("workerName",null).size() <= 50000); }
+    function fields_categories(f) { return f is map &&
+      f.keys().hasOnly(["createdAt","displayOrder","isActive","name","updatedAt"]) &&
+      f.keys().hasAll(["createdAt","displayOrder","isActive","name","updatedAt"]) &&
+      (f.get("createdAt",null) is int) &&
+      (f.get("displayOrder",null) is int) &&
+      (f.get("isActive",null) is int && f.get("isActive",null) in [0,1]) &&
+      (f.get("name",null) is string && f.get("name",null).size() <= 50000) &&
+      (f.get("updatedAt",null) is int); }
+    function fields_credit_transactions(f) { return f is map &&
+      f.keys().hasOnly(["amountPaisa","billId","createdAt","customerId","newBalancePaisa","notes","previousBalancePaisa","recordedByWorkerId","type"]) &&
+      f.keys().hasAll(["amountPaisa","createdAt","customerId","newBalancePaisa","notes","previousBalancePaisa","type"]) &&
+      (f.get("amountPaisa",null) is int) &&
+      (f.get("billId",null) == null || (f.get("billId",null) is string && f.get("billId",null).size() <= 50000 && syncId(f.get("billId",null)))) &&
+      (f.get("createdAt",null) is int) &&
+      (f.get("customerId",null) is string && f.get("customerId",null).size() <= 50000 && syncId(f.get("customerId",null))) &&
+      (f.get("newBalancePaisa",null) is int) &&
+      (f.get("notes",null) is string && f.get("notes",null).size() <= 50000) &&
+      (f.get("previousBalancePaisa",null) is int) &&
+      (f.get("recordedByWorkerId",null) == null || (f.get("recordedByWorkerId",null) is string && f.get("recordedByWorkerId",null).size() <= 50000 && syncId(f.get("recordedByWorkerId",null)))) &&
+      (f.get("type",null) is string && f.get("type",null).size() <= 50000) &&
+      ((f.type == 'CREDIT_CREATED' && f.amountPaisa > 0) || (f.type in ['PARTIAL_PAYMENT','FULL_PAYMENT'] && f.amountPaisa < 0) || f.type == 'ADJUSTMENT') &&
+      f.previousBalancePaisa + f.amountPaisa == f.newBalancePaisa; }
+    function fields_customers(f) { return f is map &&
+      f.keys().hasOnly(["address","createdAt","creditLimitPaisa","gstNumber","isActive","name","phone","updatedAt"]) &&
+      f.keys().hasAll(["address","createdAt","creditLimitPaisa","gstNumber","isActive","name","phone","updatedAt"]) &&
+      (f.get("address",null) is string && f.get("address",null).size() <= 50000) &&
+      (f.get("createdAt",null) is int) &&
+      (f.get("creditLimitPaisa",null) is int && f.get("creditLimitPaisa",null) >= 0) &&
+      (f.get("gstNumber",null) is string && f.get("gstNumber",null).size() <= 50000) &&
+      (f.get("isActive",null) is int && f.get("isActive",null) in [0,1]) &&
+      (f.get("name",null) is string && f.get("name",null).size() <= 50000) &&
+      (f.get("phone",null) is string && f.get("phone",null).size() <= 50000) &&
+      (f.get("updatedAt",null) is int); }
+    function fields_day_closings(f) { return f is map &&
+      f.keys().hasOnly(["cancelledBillCount","cardSalesPaisa","cashSalesPaisa","closingDate","createdAt","creditSalesPaisa","expectedCashPaisa","notes","totalBillCount","totalDiscountsPaisa","totalGstPaisa","totalSalesPaisa","upiSalesPaisa"]) &&
+      f.keys().hasAll(["cancelledBillCount","cardSalesPaisa","cashSalesPaisa","closingDate","createdAt","creditSalesPaisa","expectedCashPaisa","notes","totalBillCount","totalDiscountsPaisa","totalGstPaisa","totalSalesPaisa","upiSalesPaisa"]) &&
+      (f.get("cancelledBillCount",null) is int) &&
+      (f.get("cardSalesPaisa",null) is int) &&
+      (f.get("cashSalesPaisa",null) is int) &&
+      (f.get("closingDate",null) is string && f.get("closingDate",null).size() <= 50000) &&
+      (f.get("createdAt",null) is int) &&
+      (f.get("creditSalesPaisa",null) is int) &&
+      (f.get("expectedCashPaisa",null) is int) &&
+      (f.get("notes",null) is string && f.get("notes",null).size() <= 50000) &&
+      (f.get("totalBillCount",null) is int) &&
+      (f.get("totalDiscountsPaisa",null) is int) &&
+      (f.get("totalGstPaisa",null) is int) &&
+      (f.get("totalSalesPaisa",null) is int) &&
+      (f.get("upiSalesPaisa",null) is int); }
+    function fields_payments(f) { return f is map &&
+      f.keys().hasOnly(["amountPaisa","billId","createdAt","method","reference"]) &&
+      f.keys().hasAll(["amountPaisa","billId","createdAt","method","reference"]) &&
+      (f.get("amountPaisa",null) is int) &&
+      (f.get("billId",null) is string && f.get("billId",null).size() <= 50000 && syncId(f.get("billId",null))) &&
+      (f.get("createdAt",null) is int) &&
+      (f.get("method",null) is string && f.get("method",null).size() <= 50000) &&
+      (f.get("reference",null) is string && f.get("reference",null).size() <= 50000); }
+    function fields_product_costs(f) { return f is map &&
+      f.keys().hasOnly(["productSyncId","purchasePricePaisa"]) &&
+      f.keys().hasAll(["productSyncId","purchasePricePaisa"]) &&
+      (f.get("productSyncId",null) is string && f.get("productSyncId",null).size() <= 50000 && syncId(f.get("productSyncId",null))) &&
+      (f.get("purchasePricePaisa",null) is int && f.get("purchasePricePaisa",null) >= 0); }
+    function fields_product_types(f) { return f is map &&
+      f.keys().hasOnly(["categoryId","createdAt","displayOrder","isActive","name","updatedAt"]) &&
+      f.keys().hasAll(["categoryId","createdAt","displayOrder","isActive","name","updatedAt"]) &&
+      (f.get("categoryId",null) is string && f.get("categoryId",null).size() <= 50000 && syncId(f.get("categoryId",null))) &&
+      (f.get("createdAt",null) is int) &&
+      (f.get("displayOrder",null) is int) &&
+      (f.get("isActive",null) is int && f.get("isActive",null) in [0,1]) &&
+      (f.get("name",null) is string && f.get("name",null).size() <= 50000) &&
+      (f.get("updatedAt",null) is int); }
+    function fields_products(f) { return f is map &&
+      f.keys().hasOnly(["categoryId","createdAt","gstRateBp","isActive","minimumStock","name","searchAliases","sellingPricePaisa","size","typeId","unit","updatedAt","isPipe","pipeLengthPricePaisa","pipeFootPricePaisa","pipeFeetPerLength"]) &&
+      (f.get("isPipe",0) is int && f.get("isPipe",0) >= 0) &&
+      (f.get("pipeLengthPricePaisa",0) is int && f.get("pipeLengthPricePaisa",0) >= 0) &&
+      (f.get("pipeFootPricePaisa",0) is int && f.get("pipeFootPricePaisa",0) >= 0) &&
+      (f.get("pipeFeetPerLength",0) is int && f.get("pipeFeetPerLength",0) >= 0) &&
+      f.keys().hasAll(["categoryId","createdAt","gstRateBp","isActive","minimumStock","name","searchAliases","sellingPricePaisa","size","typeId","unit","updatedAt"]) &&
+      (f.get("categoryId",null) is string && f.get("categoryId",null).size() <= 50000 && syncId(f.get("categoryId",null))) &&
+      (f.get("createdAt",null) is int) &&
+      (f.get("gstRateBp",null) is int && f.get("gstRateBp",null) >= 0 && f.get("gstRateBp",null) <= 10000) &&
+      (f.get("isActive",null) is int && f.get("isActive",null) in [0,1]) &&
+      (f.get("minimumStock",null) is number && !math.isNaN(f.get("minimumStock",null) - f.get("minimumStock",null)) && f.get("minimumStock",null) >= 0) &&
+      (f.get("name",null) is string && f.get("name",null).size() <= 50000) &&
+      (f.get("searchAliases",null) is string && f.get("searchAliases",null).size() <= 50000) &&
+      (f.get("sellingPricePaisa",null) is int && f.get("sellingPricePaisa",null) >= 0) &&
+      (f.get("size",null) is string && f.get("size",null).size() <= 50000) &&
+      (f.get("typeId",null) is string && f.get("typeId",null).size() <= 50000 && syncId(f.get("typeId",null))) &&
+      (f.get("unit",null) is string && f.get("unit",null).size() <= 50000) &&
+      (f.get("updatedAt",null) is int); }
+    function fields_purchase_bill_items(f) { return f is map &&
+      f.keys().hasOnly(["createdAt","gstAmountPaisa","gstRateBp","itemTotalPaisa","productId","productName","productSize","productUnit","purchaseBillId","purchasePricePaisa","quantity"]) &&
+      f.keys().hasAll(["createdAt","gstAmountPaisa","gstRateBp","itemTotalPaisa","productId","productName","productSize","productUnit","purchaseBillId","purchasePricePaisa","quantity"]) &&
+      (f.get("createdAt",null) is int) &&
+      (f.get("gstAmountPaisa",null) is int) &&
+      (f.get("gstRateBp",null) is int && f.get("gstRateBp",null) >= 0 && f.get("gstRateBp",null) <= 10000) &&
+      (f.get("itemTotalPaisa",null) is int) &&
+      (f.get("productId",null) is string && f.get("productId",null).size() <= 50000 && syncId(f.get("productId",null))) &&
+      (f.get("productName",null) is string && f.get("productName",null).size() <= 50000) &&
+      (f.get("productSize",null) is string && f.get("productSize",null).size() <= 50000) &&
+      (f.get("productUnit",null) is string && f.get("productUnit",null).size() <= 50000) &&
+      (f.get("purchaseBillId",null) is string && f.get("purchaseBillId",null).size() <= 50000 && syncId(f.get("purchaseBillId",null))) &&
+      (f.get("purchasePricePaisa",null) is int && f.get("purchasePricePaisa",null) >= 0) &&
+      (f.get("quantity",null) is number && !math.isNaN(f.get("quantity",null) - f.get("quantity",null))); }
+    function fields_purchase_bills(f) { return f is map &&
+      f.keys().hasOnly(["billDate","createdAt","notes","supplierBillNumber","supplierId","totalPaisa"]) &&
+      f.keys().hasAll(["billDate","createdAt","notes","supplierBillNumber","supplierId","totalPaisa"]) &&
+      (f.get("billDate",null) is int) &&
+      (f.get("createdAt",null) is int) &&
+      (f.get("notes",null) is string && f.get("notes",null).size() <= 50000) &&
+      (f.get("supplierBillNumber",null) is string && f.get("supplierBillNumber",null).size() <= 50000) &&
+      (f.get("supplierId",null) is string && f.get("supplierId",null).size() <= 50000 && syncId(f.get("supplierId",null))) &&
+      (f.get("totalPaisa",null) is int); }
+    function fields_sale_return_items(f) { return f is map &&
+      f.keys().hasOnly(["billItemId","discountPaisa","quantity","restock","returnId","taxPaisa","totalPaisa"]) &&
+      f.keys().hasAll(["billItemId","discountPaisa","quantity","restock","returnId","taxPaisa","totalPaisa"]) &&
+      (f.get("billItemId",null) is string && f.get("billItemId",null).size() <= 50000 && syncId(f.get("billItemId",null))) &&
+      (f.get("discountPaisa",null) is int) &&
+      (f.get("quantity",null) is number && !math.isNaN(f.get("quantity",null) - f.get("quantity",null))) &&
+      (f.get("restock",null) is int && f.get("restock",null) in [0,1]) &&
+      (f.get("returnId",null) is string && f.get("returnId",null).size() <= 50000 && syncId(f.get("returnId",null))) &&
+      (f.get("taxPaisa",null) is int) &&
+      (f.get("totalPaisa",null) is int); }
+    function fields_sale_returns(f) { return f is map &&
+      f.keys().hasOnly(["billId","createdAt","creditReductionPaisa","discountPaisa","exchangeBillId","method","reason","refundPaisa","taxPaisa","totalPaisa"]) &&
+      f.keys().hasAll(["billId","createdAt","creditReductionPaisa","discountPaisa","method","reason","refundPaisa","taxPaisa","totalPaisa"]) &&
+      (f.get("billId",null) is string && f.get("billId",null).size() <= 50000 && syncId(f.get("billId",null))) &&
+      (f.get("createdAt",null) is int) &&
+      (f.get("creditReductionPaisa",null) is int) &&
+      (f.get("discountPaisa",null) is int) &&
+      (f.get("exchangeBillId",null) == null || (f.get("exchangeBillId",null) is string && f.get("exchangeBillId",null).size() <= 50000 && syncId(f.get("exchangeBillId",null)))) &&
+      (f.get("method",null) is string && f.get("method",null).size() <= 50000) &&
+      (f.get("reason",null) is string && f.get("reason",null).size() <= 50000) &&
+      (f.get("refundPaisa",null) is int) &&
+      (f.get("taxPaisa",null) is int) &&
+      (f.get("totalPaisa",null) is int); }
+    function fields_settings(f) { return f is map &&
+      f.keys().hasOnly(["key","updatedAt","value"]) &&
+      f.keys().hasAll(["key","updatedAt","value"]) &&
+      (f.get("key",null) is string && f.get("key",null).size() <= 50000) &&
+      (f.get("updatedAt",null) is int) &&
+      (f.get("value",null) is string && f.get("value",null).size() <= 50000) &&
+      f.key in ['shop_name','shop_phone','shop_address','shop_gst_number']; }
+    function fields_shop_profile(f) { return f is map &&
+      f.keys().hasOnly(["address","gstNumber","name","phone"]) &&
+      f.keys().hasAll(["address","gstNumber","name","phone"]) &&
+      (f.get("address",null) is string && f.get("address",null).size() <= 50000) &&
+      (f.get("gstNumber",null) is string && f.get("gstNumber",null).size() <= 50000) &&
+      (f.get("name",null) is string && f.get("name",null).size() <= 50000) &&
+      (f.get("phone",null) is string && f.get("phone",null).size() <= 50000); }
+    function fields_stock_adjustments(f) { return f is map &&
+      f.keys().hasOnly(["createdAt","difference","newStock","notes","oldStock","productId","productName","reason"]) &&
+      f.keys().hasAll(["createdAt","difference","newStock","notes","oldStock","productId","productName","reason"]) &&
+      (f.get("createdAt",null) is int) &&
+      (f.get("difference",null) is number && !math.isNaN(f.get("difference",null) - f.get("difference",null))) &&
+      (f.get("newStock",null) is number && !math.isNaN(f.get("newStock",null) - f.get("newStock",null))) &&
+      (f.get("notes",null) is string && f.get("notes",null).size() <= 50000) &&
+      (f.get("oldStock",null) is number && !math.isNaN(f.get("oldStock",null) - f.get("oldStock",null))) &&
+      (f.get("productId",null) is string && f.get("productId",null).size() <= 50000 && syncId(f.get("productId",null))) &&
+      (f.get("productName",null) is string && f.get("productName",null).size() <= 50000) &&
+      (f.get("reason",null) is string && f.get("reason",null).size() <= 50000); }
+    function fields_stock_baselines(f) { return f is map &&
+      f.keys().hasOnly(["productSyncId","quantity"]) &&
+      f.keys().hasAll(["productSyncId","quantity"]) &&
+      (f.get("productSyncId",null) is string && f.get("productSyncId",null).size() <= 50000 && syncId(f.get("productSyncId",null))) &&
+      (f.get("quantity",null) is number && !math.isNaN(f.get("quantity",null) - f.get("quantity",null))); }
+    function fields_stock_movements(f) { return f is map &&
+      f.keys().hasOnly(["delta","kind","productSyncId"]) &&
+      f.keys().hasAll(["delta","kind","productSyncId"]) &&
+      (f.get("delta",null) is number && !math.isNaN(f.get("delta",null) - f.get("delta",null))) &&
+      (f.get("kind",null) is string && f.get("kind",null).size() <= 50000) &&
+      (f.get("productSyncId",null) is string && f.get("productSyncId",null).size() <= 50000 && syncId(f.get("productSyncId",null))) &&
+      f.kind in ['OPENING','DELTA']; }
+    function fields_supplier_payments(f) { return f is map &&
+      f.keys().hasOnly(["amountPaisa","createdAt","method","purchaseBillId","reference"]) &&
+      f.keys().hasAll(["amountPaisa","createdAt","method","purchaseBillId","reference"]) &&
+      (f.get("amountPaisa",null) is int) &&
+      (f.get("createdAt",null) is int) &&
+      (f.get("method",null) is string && f.get("method",null).size() <= 50000) &&
+      (f.get("purchaseBillId",null) is string && f.get("purchaseBillId",null).size() <= 50000 && syncId(f.get("purchaseBillId",null))) &&
+      (f.get("reference",null) is string && f.get("reference",null).size() <= 50000); }
+    function fields_suppliers(f) { return f is map &&
+      f.keys().hasOnly(["address","contactName","createdAt","gstNumber","isActive","name","phone","updatedAt"]) &&
+      f.keys().hasAll(["address","contactName","createdAt","gstNumber","isActive","name","phone","updatedAt"]) &&
+      (f.get("address",null) is string && f.get("address",null).size() <= 50000) &&
+      (f.get("contactName",null) is string && f.get("contactName",null).size() <= 50000) &&
+      (f.get("createdAt",null) is int) &&
+      (f.get("gstNumber",null) is string && f.get("gstNumber",null).size() <= 50000) &&
+      (f.get("isActive",null) is int && f.get("isActive",null) in [0,1]) &&
+      (f.get("name",null) is string && f.get("name",null).size() <= 50000) &&
+      (f.get("phone",null) is string && f.get("phone",null).size() <= 50000) &&
+      (f.get("updatedAt",null) is int); }
+    function fields_workers(f) { return f is map &&
+      f.keys().hasOnly(["createdAt","isActive","maxDiscountPaisa","name","phone","requireOwnerApprovalForDiscount","updatedAt","username"]) &&
+      f.keys().hasAll(["createdAt","isActive","maxDiscountPaisa","name","phone","requireOwnerApprovalForDiscount","updatedAt","username"]) &&
+      (f.get("createdAt",null) is int) &&
+      (f.get("isActive",null) is int && f.get("isActive",null) in [0,1]) &&
+      (f.get("maxDiscountPaisa",null) is int) &&
+      (f.get("name",null) is string && f.get("name",null).size() <= 50000) &&
+      (f.get("phone",null) is string && f.get("phone",null).size() <= 50000) &&
+      (f.get("requireOwnerApprovalForDiscount",null) is int && f.get("requireOwnerApprovalForDiscount",null) in [0,1]) &&
+      (f.get("updatedAt",null) is int) &&
+      (f.get("username",null) is string && f.get("username",null).size() <= 50000); }
+    function syncFields(d,privateScope) { return (d.entity == "audit_logs" && privateScope == true && (d.deleted ? d.fields.size()==0 : fields_audit_logs(d.fields))) ||
+      (d.entity == "bill_items" && privateScope == false && (d.deleted ? d.fields.size()==0 : fields_bill_items(d.fields))) ||
+      (d.entity == "bills" && privateScope == false && (d.deleted ? d.fields.size()==0 : fields_bills(d.fields))) ||
+      (d.entity == "categories" && privateScope == false && (d.deleted ? d.fields.size()==0 : fields_categories(d.fields))) ||
+      (d.entity == "credit_transactions" && privateScope == false && (d.deleted ? d.fields.size()==0 : fields_credit_transactions(d.fields))) ||
+      (d.entity == "customers" && privateScope == false && (d.deleted ? d.fields.size()==0 : fields_customers(d.fields))) ||
+      (d.entity == "day_closings" && privateScope == true && (d.deleted ? d.fields.size()==0 : fields_day_closings(d.fields))) ||
+      (d.entity == "payments" && privateScope == false && (d.deleted ? d.fields.size()==0 : fields_payments(d.fields))) ||
+      (d.entity == "product_costs" && privateScope == true && (d.deleted ? d.fields.size()==0 : fields_product_costs(d.fields))) ||
+      (d.entity == "product_types" && privateScope == false && (d.deleted ? d.fields.size()==0 : fields_product_types(d.fields))) ||
+      (d.entity == "products" && privateScope == false && (d.deleted ? d.fields.size()==0 : fields_products(d.fields))) ||
+      (d.entity == "purchase_bill_items" && privateScope == true && (d.deleted ? d.fields.size()==0 : fields_purchase_bill_items(d.fields))) ||
+      (d.entity == "purchase_bills" && privateScope == true && (d.deleted ? d.fields.size()==0 : fields_purchase_bills(d.fields))) ||
+      (d.entity == "sale_return_items" && privateScope == false && (d.deleted ? d.fields.size()==0 : fields_sale_return_items(d.fields))) ||
+      (d.entity == "sale_returns" && privateScope == false && (d.deleted ? d.fields.size()==0 : fields_sale_returns(d.fields))) ||
+      (d.entity == "settings" && privateScope == true && (d.deleted ? d.fields.size()==0 : fields_settings(d.fields))) ||
+      (d.entity == "shop_profile" && privateScope == false && (d.deleted ? d.fields.size()==0 : fields_shop_profile(d.fields))) ||
+      (d.entity == "stock_adjustments" && privateScope == true && (d.deleted ? d.fields.size()==0 : fields_stock_adjustments(d.fields))) ||
+      (d.entity == "stock_baselines" && privateScope == false && (d.deleted ? d.fields.size()==0 : fields_stock_baselines(d.fields))) ||
+      (d.entity == "stock_movements" && privateScope == false && (d.deleted ? d.fields.size()==0 : fields_stock_movements(d.fields))) ||
+      (d.entity == "supplier_payments" && privateScope == true && (d.deleted ? d.fields.size()==0 : fields_supplier_payments(d.fields))) ||
+      (d.entity == "suppliers" && privateScope == true && (d.deleted ? d.fields.size()==0 : fields_suppliers(d.fields))) ||
+      (d.entity == "workers" && privateScope == false && (d.deleted ? d.fields.size()==0 : fields_workers(d.fields))); }
+
+    // V2 is structured and versioned. Changes and the matching head must commit together.
+    function syncId(id) { return id is string && id.matches('[A-Za-z0-9_-]{16,120}'); }
+    function syncMember(shopId) {
+      return member(shopId) && get(/databases/$(database)/documents/shops/$(shopId)/members/$(request.auth.uid)).data.get('role','') in ['OWNER','WORKER'];
+    }
+    function syncEnvelope(d,privateScope) {
+      return d.schemaVersion == 2 && syncId(d.recordId) && syncId(d.operationId) &&
+        d.entity is string && d.authorUid == request.auth.uid && d.baseVersion is int && d.baseVersion >= 0 &&
+        d.version is int && d.version > 0 && d.version == d.baseVersion+1 && d.deleted is bool && d.fields is map &&
+        (!d.deleted || !(d.entity in ["audit_logs","bill_items","bills","credit_transactions","day_closings","payments","purchase_bill_items","purchase_bills","sale_return_items","sale_returns","stock_adjustments","stock_baselines","stock_movements","supplier_payments"])) && syncFields(d,privateScope);
+    }
+    function syncRole(shopId,d,old,existing,privateScope) {
+      return owner(shopId) || (!privateScope && !(d.entity in ["categories","day_closings","product_costs","product_types","purchase_bill_items","purchase_bills","sale_return_items","sale_returns","settings","shop_profile","stock_adjustments","stock_baselines","supplier_payments","suppliers","workers"]) && !d.deleted &&
+        (d.entity != 'products' || (!existing && d.fields.sellingPricePaisa == 0)) &&
+        (d.entity != 'bills' || (existing ? d.fields == old.fields : d.fields.status == 'ACTIVE')) &&
+        (d.entity != 'customers' || (d.fields.creditLimitPaisa == (existing ? old.fields.creditLimitPaisa : 0) &&
+          d.fields.isActive == (existing ? old.fields.isActive : 1))) &&
+        (d.entity != 'stock_movements' || (d.fields.kind == 'DELTA' && d.fields.delta <= 0)) &&
+        (d.entity != 'credit_transactions' || d.fields.type in ['CREDIT_CREATED','PARTIAL_PAYMENT','FULL_PAYMENT']));
+    }
+    function syncTransition(d,old,existing) {
+      return d.baseVersion == (existing ? old.version : 0) &&
+        (!existing || (old.recordId == d.recordId && old.entity == d.entity &&
+          (!old.deleted || d.deleted) &&
+          (!(d.entity in ["audit_logs","bill_items","credit_transactions","payments","purchase_bill_items","sale_return_items","stock_adjustments","stock_baselines","stock_movements","supplier_payments"]) || (!d.deleted && old.fields == d.fields)) &&
+          (d.entity != 'bills' || d.deleted || old.fields.billNumber == d.fields.billNumber)));
+    }
+    function sameOperation(head,change) {
+      return head.schemaVersion==change.schemaVersion && head.operationId==change.operationId &&
+        head.recordId==change.recordId && head.entity==change.entity && head.authorUid==change.authorUid &&
+        head.baseVersion==change.baseVersion && head.version==change.version &&
+        head.deleted==change.deleted && head.fields==change.fields;
+    }
+    function syncHead(shopId,collection,recordId,privateScope) {
+      let d=request.resource.data;
+      let path=/databases/$(database)/documents/shops/$(shopId)/$(collection)/$(recordId);
+      let existing=exists(path);
+      let old=existing ? get(path).data : {};
+      let changePath=/databases/$(database)/documents/shops/$(shopId)/$(collection+'_changes')/$(d.operationId);
+      return syncMember(shopId) && (!privateScope || owner(shopId)) &&
+        d.keys().hasOnly(['schemaVersion','operationId','recordId','entity','authorUid','baseVersion','version','deleted','fields','lastOperationId']) &&
+        d.recordId==recordId && d.lastOperationId==d.operationId && syncEnvelope(d,privateScope) &&
+        syncRole(shopId,d,old,existing,privateScope) && syncTransition(d,old,existing) &&
+        !exists(changePath) && sameOperation(d,getAfter(changePath).data) && getAfter(changePath).data.committedAt==request.time;
+    }
+    function syncChange(shopId,collection,operationId,privateScope) {
+      let d=request.resource.data;
+      let path=/databases/$(database)/documents/shops/$(shopId)/$(collection)/$(d.recordId);
+      let existing=exists(path);
+      let old=existing ? get(path).data : {};
+      let head=getAfter(path).data;
+      return syncMember(shopId) && (!privateScope || owner(shopId)) &&
+        d.keys().hasOnly(['schemaVersion','operationId','recordId','entity','authorUid','baseVersion','version','deleted','fields','committedAt']) &&
+        d.operationId==operationId && d.committedAt==request.time && syncEnvelope(d,privateScope) &&
+        syncRole(shopId,d,old,existing,privateScope) && syncTransition(d,old,existing) &&
+        head.lastOperationId==operationId && sameOperation(head,d);
+    }
+    function syncBundle(shopId,collection,bundleId,privateScope) {
+      let d=request.resource.data;
+      let root=get(/databases/$(database)/documents/shops/$(shopId)/$(collection+'_changes')/$(bundleId)).data;
+      return syncMember(shopId) && (!privateScope || owner(shopId)) &&
+        d.keys().hasOnly(['schemaVersion','bundleId','rootId','rootEntity','authorUid','committedAt','members']) &&
+        d.schemaVersion==2 && d.bundleId==bundleId && syncId(bundleId) && syncId(d.rootId) &&
+        d.authorUid==request.auth.uid && d.committedAt==request.time && d.members is list &&
+        d.members.size()>=2 && d.members.size()<=2000 &&
+        d.members.toSet().size()==d.members.size() && d.members.join(',').size()<=700000 &&
+        d.members.join(',').matches('[A-Za-z0-9_-]{16,120}:[A-Za-z0-9_-]{16,120}:(bills|bill_items|payments|credit_transactions|sale_returns|sale_return_items|purchase_bills|purchase_bill_items|supplier_payments):[1-9][0-9]{0,18}(,[A-Za-z0-9_-]{16,120}:[A-Za-z0-9_-]{16,120}:(bills|bill_items|payments|credit_transactions|sale_returns|sale_return_items|purchase_bills|purchase_bill_items|supplier_payments):[1-9][0-9]{0,18})*') &&
+        d.rootEntity==(privateScope ? 'purchase_bills' : 'bills') &&
+        d.members.hasAll([bundleId+':'+d.rootId+':'+d.rootEntity+':'+string(root.version)]) &&
+        root.authorUid==request.auth.uid && root.recordId==d.rootId && root.entity==d.rootEntity && !root.deleted;
+    }
+
+
+    match /shops/{shopId}/sync_v2_public/{recordId} {
+      allow read: if syncMember(shopId);
+      allow create,update: if syncHead(shopId,'sync_v2_public',recordId,false);
+      allow delete: if false;
+    }
+    match /shops/{shopId}/sync_v2_public_changes/{operationId} {
+      allow read: if syncMember(shopId);
+      allow create: if syncChange(shopId,'sync_v2_public',operationId,false);
+      allow update,delete: if false;
+    }
+    match /shops/{shopId}/sync_v2_public_bundles/{bundleId} {
+      allow read: if syncMember(shopId);
+      allow create: if syncBundle(shopId,'sync_v2_public',bundleId,false);
+      allow update,delete: if false;
+    }
+
+    match /shops/{shopId}/sync_v2_private/{recordId} {
+      allow read: if owner(shopId);
+      allow create,update: if syncHead(shopId,'sync_v2_private',recordId,true);
+      allow delete: if false;
+    }
+    match /shops/{shopId}/sync_v2_private_changes/{operationId} {
+      allow read: if owner(shopId);
+      allow create: if syncChange(shopId,'sync_v2_private',operationId,true);
+      allow update,delete: if false;
+    }
+    match /shops/{shopId}/sync_v2_private_bundles/{bundleId} {
+      allow read: if owner(shopId);
+      allow create: if syncBundle(shopId,'sync_v2_private',bundleId,true);
+      allow update,delete: if false;
+    }
+  }
+}
+

@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en-IN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#173d36"><meta name="description" content="Browse hardware, choose sizes and send your pickup order to the shop."><title>HardwareShopPOS · Shop catalog</title><link rel="stylesheet" href="/styles.css"><script type="module" src="/app.mjs"></script></head>
+<body>
+<a class="skip" href="#products">Skip to products</a>
+<header><div class="topline wrap"><a class="brand" href="/" aria-label="Shop home"><span class="monogram" aria-hidden="true">H</span><span><strong id="shop-name">HardwareShopPOS</strong></span></a><button id="cart-top" class="cart-button" aria-label="Open cart">Cart <span id="cart-count">0</span></button></div>
+<div class="search-wrap wrap"><label class="sr-only" for="search">Search products, sizes or local names</label><span aria-hidden="true" class="search-symbol">⌕</span><input id="search" type="search" placeholder="Search pipes, fittings, tools…" autocomplete="off" enterkeyhint="search"><button id="clear-search" class="plain" aria-label="Clear search" hidden>Clear</button><kbd>/</kbd></div>
+</header>
+<main class="wrap"><div class="shop-status"><span id="ordering-status">Loading shop hours…</span><span id="hours"></span></div><p class="preview">LOCAL PREVIEW · Sample products and prices. No live shop connection.</p>
+
+<nav id="categories" aria-label="Product categories"></nav>
+<div class="result-heading"><div><h2 id="results-title">All essentials</h2><p id="result-count" aria-live="polite">Loading the catalog…</p></div><button id="refresh-catalog" class="text-button">Refresh catalog</button></div>
+<div id="catalog-error" class="notice" role="status" hidden></div><div id="products" tabindex="-1" class="products"></div><button id="load-more" class="secondary more" hidden>Show more products</button>
+<section class="counter-note"><strong>Can’t find something?</strong><p>Add a request in your cart. Our team will confirm availability and the final price.</p></section>
+<footer><span id="shop-contact">In-shop pickup · Pay at the counter</span><p>Prices are estimates. Availability, GST and your final bill are confirmed by the shop.</p><button id="last-order" class="text-button" hidden>View your last order</button></footer>
+</main>
+<button id="cart-bar" class="cart-bar" hidden><span><b id="bar-count">0 sizes</b><small>View your cart →</small></span><strong id="bar-total">₹0.00</strong></button>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+<dialog id="panel" aria-labelledby="panel-title"><div class="panel-shell"><div class="panel-head"><div><p class="eyebrow" id="panel-kicker">CHOOSE YOUR SIZES</p><h2 id="panel-title"></h2></div><button id="close-panel" class="close" aria-label="Close panel">×</button></div><div id="panel-content" class="panel-content"></div><div id="panel-actions" class="panel-actions"></div></div></dialog>
+</body></html>

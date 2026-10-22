@@ -1,0 +1,3 @@
+-keep public class phase4j.r8.AnnotationProbe { public static void main(java.lang.String[]); }
+-keep class phase4j.r8.AnnotationProbe$A
+-keepattributes RuntimeVisibleAnnotations,AnnotationDefault,InnerClasses,EnclosingMethod

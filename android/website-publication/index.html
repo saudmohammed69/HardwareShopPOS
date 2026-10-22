@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en-IN" data-mode="catalog-only">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#173d36"><meta name="description" content="Browse the shop catalog. Ordering is currently unavailable."><title>HardwareShopPOS · Shop catalog</title><link rel="stylesheet" href="/styles.css"><script type="module" src="/catalog.mjs"></script></head>
+<body>
+<a class="skip" href="#products">Skip to products</a>
+<header><div class="topline wrap"><a class="brand" href="/" aria-label="Shop home"><span class="monogram" aria-hidden="true">H</span><span><strong id="shop-name">HardwareShopPOS</strong><small>Hardware &amp; building essentials</small></span></a><span class="size-tag">Browse only</span></div>
+<div class="search-wrap wrap"><label class="sr-only" for="search">Search products, sizes or local names</label><span aria-hidden="true" class="search-symbol">⌕</span><input id="search" type="search" placeholder="Search pipes, fittings, tools…" autocomplete="off" enterkeyhint="search"><button id="clear-search" class="plain" aria-label="Clear search" hidden>Clear</button></div></header>
+<main class="wrap"><div class="shop-status"><span id="ordering-status">Ordering unavailable</span><span id="hours"></span></div>
+<section class="intro" aria-labelledby="intro-title"><div><p class="eyebrow">HARDWARE &amp; BUILDING ESSENTIALS</p><h1 id="intro-title">Browse our catalog.</h1><p id="message">The catalog is being prepared. Please ask our team at the counter.</p></div></section>
+<div class="notice" role="status">Online ordering is unavailable. Please speak to our team before purchasing.</div>
+<nav id="categories" aria-label="Product categories"></nav><div class="result-heading"><div><h2 id="results-title">All essentials</h2><p id="result-count" aria-live="polite">Loading the catalog…</p></div><button id="refresh-catalog" class="text-button">Refresh catalog</button></div>
+<div id="catalog-error" class="notice" role="alert" hidden></div><div id="products" tabindex="-1" class="products"></div><button id="load-more" class="secondary more" hidden>Show more products</button>
+<footer><span id="shop-contact"></span><p>Availability and final prices are confirmed by the shop at the counter.</p></footer></main>
+<dialog id="panel" aria-labelledby="panel-title"><div class="panel-shell"><div class="panel-head"><div><p class="eyebrow">PRODUCT SIZES</p><h2 id="panel-title"></h2></div><button id="close-panel" class="close" aria-label="Close panel">×</button></div><div id="panel-content" class="panel-content"></div><div class="panel-actions"><p class="muted">Please ask our team to check availability and prepare your bill.</p><button id="done">Done</button></div></div></dialog>
+</body></html>

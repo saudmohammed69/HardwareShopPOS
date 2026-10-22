@@ -1,0 +1,12 @@
+[
+ {"unit":"Length","physical":20,"lengths":"1","feet":"10","lengthPrice":"40000","footPrice":"3500","total":"75000","quantity":"1.5"},
+ {"unit":"Piece","physical":20,"lengths":"2","feet":"5","lengthPrice":"85000","footPrice":"7000","total":"205000","quantity":"2.25"},
+ {"unit":"Foot","physical":20,"lengths":"1","feet":"10","lengthPrice":"40000","footPrice":"3500","total":"75000","quantity":"30"},
+ {"unit":"Length","physical":20,"lengths":"0","feet":"1.25","lengthPrice":"40000","footPrice":"3500","total":"4375","quantity":"0.0625"},
+ {"unit":"Length","physical":20,"lengths":"0","feet":"0.01","lengthPrice":"40000","footPrice":"50","total":"1","quantity":"0.0005"},
+ {"unit":"Length","physical":7,"lengths":"0","feet":"3","lengthPrice":"40000","footPrice":"3500","error":true},
+ {"unit":"Length","physical":20,"lengths":"0","feet":"0.001","lengthPrice":"40000","footPrice":"3500","error":true},
+ {"unit":"Length","physical":20,"lengths":"999999999","feet":"1","lengthPrice":"9223372036854775807","footPrice":"3500","error":true},
+ {"unit":"Length","physical":20,"lengths":"-1","feet":"0","lengthPrice":"40000","footPrice":"3500","error":true},
+ {"unit":"Feet","physical":20,"lengths":"3","feet":"2.50","lengthPrice":"40000","footPrice":"3500","total":"128750","quantity":"62.5"}
+]

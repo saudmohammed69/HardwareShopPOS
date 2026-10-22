@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Hardware Shop POS</string>
+    <string name="app_version">1.0.0</string>
+    <string name="worker_role">Worker</string>
+    <string name="owner_role">Owner</string>
+    <string name="new_bill">NEW BILL</string>
+    <string name="save_bill">SAVE BILL</string>
+    <string name="print_receipt">PRINT RECEIPT</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="remove_from_cart">Remove</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="discount">Discount</string>
+    <string name="gst">GST</string>
+    <string name="total">TOTAL</string>
+    <string name="payment_cash">Cash</string>
+    <string name="payment_upi">UPI</string>
+    <string name="payment_card">Card</string>
+    <string name="payment_credit">Credit / Udhaar</string>
+    <string name="low_stock">Low Stock</string>
+    <string name="no_products">No products found</string>
+    <string name="search_products">Search products…</string>
+    <string name="select_category">Select Category</string>
+    <string name="select_type">Select Type</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="back">Back</string>
+    <string name="logout">Logout</string>
+    <string name="error_empty_cart">Cart is empty</string>
+    <string name="error_invalid_qty">Invalid quantity</string>
+    <string name="error_no_printer">No printer configured</string>
+    <string name="thank_you">Thank You!</string>
+    <string name="visit_again">Visit Again Soon</string>
+</resources>
