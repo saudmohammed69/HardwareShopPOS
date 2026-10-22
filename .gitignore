@@ -27,9 +27,6 @@ android/**/*.pem
 android/**/*.key
 android/**/service-account*.json
 android/**/credentials*.json
-android/app/src/main/assets/final_catalog.json
-android/app/src/main/assets/store_catalog.json
-android/tools/store_catalog_merge_report.json
 android/**/*.db
 android/**/*.sqlite*
 android/**/*.log

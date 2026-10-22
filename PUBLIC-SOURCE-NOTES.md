@@ -1,5 +1,5 @@
-# Public source exclusions
+# Public source notes
 
-This export starts a clean Git history and includes the current application source and project documentation. It deliberately omits local catalog JSON that contains purchase price and stock fields, Firebase project configuration, credentials, signing material, databases, backups, build artifacts, and release approvals. Do not add those owner-held files to this public repository.
+The owner explicitly approved publishing the shop catalog data in this public repository, including purchase prices and stock quantities in the Android catalog assets and merge report. The customer website continues to show only product names, sizes/units, and selling prices.
 
-The website catalog is separately owner-approved and exposes only product name, size, selling unit, and selling price. Website checkout is disabled.
+The export starts a clean Git history, so the original POS repository history is not included. Credentials, Firebase configuration, signing keys, local databases/backups, logs, build outputs, and deployment approvals remain excluded. Checkout is disabled on the deployed website.

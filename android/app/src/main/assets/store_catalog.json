@@ -1,0 +1,4699 @@
+[
+  {
+    "name": "Rain Coat with Pant Coat",
+    "size": "",
+    "selling": "270",
+    "category": "Home Essentials",
+    "type": "Raincoats & Umbrellas",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 4,
+    "sourceCell": "C4",
+    "id": "final-store-4d658c99eb415827ad2653bb17f34ff9",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 4,
+      "sourceCell": "C4",
+      "selling": "270"
+    }
+  },
+  {
+    "category": "Home Essentials",
+    "type": "Raincoats & Umbrellas",
+    "name": "Raincoat",
+    "size": "",
+    "unit": "Piece",
+    "selling": "285",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      602
+    ],
+    "sourceIds": [
+      "222"
+    ],
+    "notes": "",
+    "id": "final-b84676cd63456ed880e5edee234ba695",
+    "baseSelling": "285",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 5,
+      "sourceCell": "C5",
+      "selling": "140"
+    }
+  },
+  {
+    "name": "Black Mat",
+    "size": "",
+    "selling": "300",
+    "category": "Home Essentials",
+    "type": "Raincoats & Umbrellas",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 6,
+    "sourceCell": "C6",
+    "id": "final-store-ed27363ca4591a04d9dcb13bcfc1c48e",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 6,
+      "sourceCell": "C6",
+      "selling": "300"
+    }
+  },
+  {
+    "name": "Wood Sizer Primer",
+    "size": "",
+    "selling": "500",
+    "category": "Home Essentials",
+    "type": "Raincoats & Umbrellas",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 7,
+    "sourceCell": "C7",
+    "id": "final-store-034214fae80441bf858f690afaecc464",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 7,
+      "sourceCell": "C7",
+      "selling": "500"
+    }
+  },
+  {
+    "category": "Home Essentials",
+    "type": "Raincoats & Umbrellas",
+    "name": "Umbrella",
+    "size": "",
+    "unit": "Piece",
+    "selling": "400",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      603
+    ],
+    "sourceIds": [
+      "230"
+    ],
+    "notes": "Price updated to Rs 400 (was Rs 600); corrected per updated price list",
+    "id": "final-9522c9ede7e0c437fa087e313ed1bbe6",
+    "baseSelling": "400",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 8,
+      "sourceCell": "C8",
+      "selling": "400"
+    }
+  },
+  {
+    "name": "Garden Pipe",
+    "size": "½\"",
+    "selling": "1650",
+    "category": "Plumbing Accessories",
+    "type": "Garden Pipes",
+    "unit": "Roll",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 10,
+    "sourceCell": "C10",
+    "id": "final-store-71dde2cc807274d6d9ccf15dead81f72",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 10,
+      "sourceCell": "C10",
+      "selling": "1650"
+    }
+  },
+  {
+    "name": "Garden Pipe",
+    "size": "½\"",
+    "selling": "55",
+    "category": "Plumbing Accessories",
+    "type": "Garden Pipes",
+    "unit": "Meter",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 11,
+    "sourceCell": "C11",
+    "id": "final-store-3226d2b19a5e62d2b1db4d60b83562b6",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 11,
+      "sourceCell": "C11",
+      "selling": "55"
+    }
+  },
+  {
+    "name": "Garden Pipe Lite",
+    "size": "½\"",
+    "selling": "800",
+    "category": "Plumbing Accessories",
+    "type": "Garden Pipes",
+    "unit": "Roll",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 12,
+    "sourceCell": "C12",
+    "id": "final-store-0dc481b00ccda22f1fa50b635613fe10",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 12,
+      "sourceCell": "C12",
+      "selling": "800"
+    }
+  },
+  {
+    "name": "Garden Pipe Lite",
+    "size": "½\"",
+    "selling": "30",
+    "category": "Plumbing Accessories",
+    "type": "Garden Pipes",
+    "unit": "Meter",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 13,
+    "sourceCell": "C13",
+    "id": "final-store-78196cc87204023f95969fe03789a182",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 13,
+      "sourceCell": "C13",
+      "selling": "30"
+    }
+  },
+  {
+    "name": "Garden Pipe",
+    "size": "¾\"",
+    "selling": "1950",
+    "category": "Plumbing Accessories",
+    "type": "Garden Pipes",
+    "unit": "Roll",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 14,
+    "sourceCell": "C14",
+    "id": "final-store-cf6e42242ba00946ac2b8a2aab1a8043",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 14,
+      "sourceCell": "C14",
+      "selling": "1950"
+    }
+  },
+  {
+    "name": "Garden Pipe",
+    "size": "¾\"",
+    "selling": "65",
+    "category": "Plumbing Accessories",
+    "type": "Garden Pipes",
+    "unit": "Meter",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 15,
+    "sourceCell": "C15",
+    "id": "final-store-0f9d59aa284e3c3c4efd619ae67ee7db",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 15,
+      "sourceCell": "C15",
+      "selling": "65"
+    }
+  },
+  {
+    "name": "PVC Gum Bottle",
+    "size": "25 ml",
+    "selling": "17",
+    "category": "Adhesives & Sealants",
+    "type": "Solvent Cement",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 17,
+    "sourceCell": "C17",
+    "id": "final-store-5e3c2ea9a3ee53ed80f3d4bc9786cf0e",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 17,
+      "sourceCell": "C17",
+      "selling": "17"
+    }
+  },
+  {
+    "name": "PVC Gum Bottle",
+    "size": "50 ml",
+    "selling": "30",
+    "category": "Adhesives & Sealants",
+    "type": "Solvent Cement",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 18,
+    "sourceCell": "C18",
+    "id": "final-store-f228d7ff6f3f0347e813414ee9a2e117",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 18,
+      "sourceCell": "C18",
+      "selling": "30"
+    }
+  },
+  {
+    "name": "PVC Gum Tube",
+    "size": "10 ml",
+    "selling": "12",
+    "category": "Adhesives & Sealants",
+    "type": "Solvent Cement",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 19,
+    "sourceCell": "C19",
+    "id": "final-store-483f3a1111bc3ccb1d47838e6516336e",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 19,
+      "sourceCell": "C19",
+      "selling": "12"
+    }
+  },
+  {
+    "name": "CPVC Gum Tube",
+    "size": "25 ml",
+    "selling": "75",
+    "category": "Adhesives & Sealants",
+    "type": "Solvent Cement",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 20,
+    "sourceCell": "C20",
+    "id": "final-store-3e158a5238a16ced17077b27c32daae5",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 20,
+      "sourceCell": "C20",
+      "selling": "75"
+    }
+  },
+  {
+    "name": "UPVC Gum Tube",
+    "size": "25 ml",
+    "selling": "35",
+    "category": "Adhesives & Sealants",
+    "type": "Solvent Cement",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 21,
+    "sourceCell": "C21",
+    "id": "final-store-54c10b94b119aa6a3ea6184675c41353",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 21,
+      "sourceCell": "C21",
+      "selling": "35"
+    }
+  },
+  {
+    "name": "PVC Gum Tin",
+    "size": "50 ml",
+    "selling": "75",
+    "category": "Adhesives & Sealants",
+    "type": "Solvent Cement",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 22,
+    "sourceCell": "C22",
+    "id": "final-store-62ca2d2784fe4b77228e1d785a6bdcff",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 22,
+      "sourceCell": "C22",
+      "selling": "75"
+    }
+  },
+  {
+    "name": "PVC Gum Tin",
+    "size": "118 ml",
+    "selling": "130",
+    "category": "Adhesives & Sealants",
+    "type": "Solvent Cement",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 23,
+    "sourceCell": "C23",
+    "id": "final-store-d48230dd14905ca4b1fee67f434fa0b4",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 23,
+      "sourceCell": "C23",
+      "selling": "130"
+    }
+  },
+  {
+    "name": "UPVC Gum Tin",
+    "size": "50 ml",
+    "selling": "110",
+    "category": "Adhesives & Sealants",
+    "type": "Solvent Cement",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 24,
+    "sourceCell": "C24",
+    "id": "final-store-88500a1177518591213d31835c70c4d7",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 24,
+      "sourceCell": "C24",
+      "selling": "110"
+    }
+  },
+  {
+    "name": "UPVC Gum Tin",
+    "size": "118 ml",
+    "selling": "190",
+    "category": "Adhesives & Sealants",
+    "type": "Solvent Cement",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 25,
+    "sourceCell": "C25",
+    "id": "final-store-7be0d9cc216cff2c3e1b900be215c8d6",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 25,
+      "sourceCell": "C25",
+      "selling": "190"
+    }
+  },
+  {
+    "name": "CPVC Gum Tin",
+    "size": "50 ml",
+    "selling": "150",
+    "category": "Adhesives & Sealants",
+    "type": "Solvent Cement",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 26,
+    "sourceCell": "C26",
+    "id": "final-store-50ff3b6232cf3f77543e1e508f810661",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 26,
+      "sourceCell": "C26",
+      "selling": "150"
+    }
+  },
+  {
+    "name": "CPVC Gum Tin",
+    "size": "118 ml",
+    "selling": "250",
+    "category": "Adhesives & Sealants",
+    "type": "Solvent Cement",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 27,
+    "sourceCell": "C27",
+    "id": "final-store-0bfcbcbc62efb2129070d42d3422b0a9",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 27,
+      "sourceCell": "C27",
+      "selling": "250"
+    }
+  },
+  {
+    "name": "Glass Cutter",
+    "size": "",
+    "selling": "200",
+    "category": "Tools",
+    "type": "Hand Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 29,
+    "sourceCell": "C29",
+    "id": "final-store-0cab7664a1b42202a2dab00bef178221",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 29,
+      "sourceCell": "C29",
+      "selling": "200"
+    }
+  },
+  {
+    "name": "Hooks",
+    "size": "",
+    "selling": "30",
+    "category": "Tools",
+    "type": "Hand Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 30,
+    "sourceCell": "C30",
+    "id": "final-store-61a36dee5668863a5df38deed7b28a54",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 30,
+      "sourceCell": "C30",
+      "selling": "30"
+    }
+  },
+  {
+    "name": "Tester",
+    "size": "Small",
+    "selling": "40",
+    "category": "Tools",
+    "type": "Hand Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 31,
+    "sourceCell": "C31",
+    "id": "final-store-4f460f1505f69cedf732403afc396e90",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 31,
+      "sourceCell": "C31",
+      "selling": "40"
+    }
+  },
+  {
+    "name": "Tester",
+    "size": "Medium",
+    "selling": "60",
+    "category": "Tools",
+    "type": "Hand Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 32,
+    "sourceCell": "C32",
+    "id": "final-store-1bc01a2f286d247ace0cfbb34802cfc4",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 32,
+      "sourceCell": "C32",
+      "selling": "60"
+    }
+  },
+  {
+    "name": "Tester",
+    "size": "Large",
+    "selling": "210",
+    "category": "Tools",
+    "type": "Hand Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 33,
+    "sourceCell": "C33",
+    "id": "final-store-ad4d13ab605931938079bf1980632a35",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 33,
+      "sourceCell": "C33",
+      "selling": "210"
+    }
+  },
+  {
+    "name": "Safety Glass",
+    "size": "",
+    "selling": "120",
+    "category": "Tools",
+    "type": "Hand Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 34,
+    "sourceCell": "C34",
+    "id": "final-store-a171a3e899aba89a5af89c14e193728b",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 34,
+      "sourceCell": "C34",
+      "selling": "120"
+    }
+  },
+  {
+    "name": "Joint Mesh",
+    "size": "4\"",
+    "selling": "300",
+    "category": "Hardware & Fasteners",
+    "type": "Joint Mesh",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 36,
+    "sourceCell": "C36",
+    "id": "final-store-a49f43328e501686e3861e12506a1b04",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 36,
+      "sourceCell": "C36",
+      "selling": "300"
+    }
+  },
+  {
+    "name": "Joint Mesh",
+    "size": "6\"",
+    "selling": "350",
+    "category": "Hardware & Fasteners",
+    "type": "Joint Mesh",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 37,
+    "sourceCell": "C37",
+    "id": "final-store-5f00fc372c6ec877e5b29cc39ce433bd",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 37,
+      "sourceCell": "C37",
+      "selling": "350"
+    }
+  },
+  {
+    "name": "Fevicol SH",
+    "size": "100 ml",
+    "selling": "36",
+    "category": "Adhesives & Sealants",
+    "type": "Adhesives",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 39,
+    "sourceCell": "C39",
+    "id": "final-store-005b87fcaa85377b7e9b1caef7ce0bf9",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 39,
+      "sourceCell": "C39",
+      "selling": "36"
+    }
+  },
+  {
+    "name": "Fevicol SH",
+    "size": "200 ml",
+    "selling": "108",
+    "category": "Adhesives & Sealants",
+    "type": "Adhesives",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 40,
+    "sourceCell": "C40",
+    "id": "final-store-90195ea5c81c0ef609bac0d138fe4106",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 40,
+      "sourceCell": "C40",
+      "selling": "108"
+    }
+  },
+  {
+    "name": "Fevicol SH",
+    "size": "½ L",
+    "selling": "215",
+    "category": "Adhesives & Sealants",
+    "type": "Adhesives",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 41,
+    "sourceCell": "C41",
+    "id": "final-store-e96f90fe09259a6074a0b54553b034c0",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 41,
+      "sourceCell": "C41",
+      "selling": "215"
+    }
+  },
+  {
+    "name": "Fevicol SH",
+    "size": "1 L",
+    "selling": "395",
+    "category": "Adhesives & Sealants",
+    "type": "Adhesives",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 42,
+    "sourceCell": "C42",
+    "id": "final-store-f012e884a05e1180c87fd90606726b5a",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 42,
+      "sourceCell": "C42",
+      "selling": "395"
+    }
+  },
+  {
+    "name": "Fevicol SR",
+    "size": "100 ml",
+    "selling": "100",
+    "category": "Adhesives & Sealants",
+    "type": "Adhesives",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 44,
+    "sourceCell": "C44",
+    "id": "final-store-871fead508e388ee7b1f1354cb700dc4",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 44,
+      "sourceCell": "C44",
+      "selling": "100"
+    }
+  },
+  {
+    "name": "Fevicol SR",
+    "size": "200 ml",
+    "selling": "145",
+    "category": "Adhesives & Sealants",
+    "type": "Adhesives",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 45,
+    "sourceCell": "C45",
+    "id": "final-store-79f06ce890aa715b1beed2aa289870d4",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 45,
+      "sourceCell": "C45",
+      "selling": "145"
+    }
+  },
+  {
+    "name": "Fevicol SR",
+    "size": "½ L",
+    "selling": "280",
+    "category": "Adhesives & Sealants",
+    "type": "Adhesives",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 46,
+    "sourceCell": "C46",
+    "id": "final-store-6c2b734685c7f81bf9c2831067c2fd4d",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 46,
+      "sourceCell": "C46",
+      "selling": "280"
+    }
+  },
+  {
+    "name": "Fevicol SR",
+    "size": "1 L",
+    "selling": "520",
+    "category": "Adhesives & Sealants",
+    "type": "Adhesives",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 47,
+    "sourceCell": "C47",
+    "id": "final-store-2fb2492ff278501f773e40b24f178a9e",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 47,
+      "sourceCell": "C47",
+      "selling": "520"
+    }
+  },
+  {
+    "name": "Fevicol Heat X",
+    "size": "100 ml",
+    "selling": "94",
+    "category": "Adhesives & Sealants",
+    "type": "Adhesives",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 49,
+    "sourceCell": "C49",
+    "id": "final-store-784e3967ff117ab388606c077b96de04",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 49,
+      "sourceCell": "C49",
+      "selling": "94"
+    }
+  },
+  {
+    "name": "Fevicol Heat X",
+    "size": "200 ml",
+    "selling": "165",
+    "category": "Adhesives & Sealants",
+    "type": "Adhesives",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 50,
+    "sourceCell": "C50",
+    "id": "final-store-e00e4879810f3de555140dd862c8edb4",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 50,
+      "sourceCell": "C50",
+      "selling": "165"
+    }
+  },
+  {
+    "name": "Fevicol Heat X",
+    "size": "½ L",
+    "selling": "365",
+    "category": "Adhesives & Sealants",
+    "type": "Adhesives",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 51,
+    "sourceCell": "C51",
+    "id": "final-store-0553a0ba41270550062650b90a2a6822",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 51,
+      "sourceCell": "C51",
+      "selling": "365"
+    }
+  },
+  {
+    "name": "Fevicol Heat X",
+    "size": "1 L",
+    "selling": "655",
+    "category": "Adhesives & Sealants",
+    "type": "Adhesives",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 52,
+    "sourceCell": "C52",
+    "id": "final-store-eb14c38957966997bec05069e236a55d",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 52,
+      "sourceCell": "C52",
+      "selling": "655"
+    }
+  },
+  {
+    "name": "Aradite Slow",
+    "size": "1.8 kg",
+    "selling": "1625",
+    "category": "Adhesives & Sealants",
+    "type": "Adhesives",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 54,
+    "sourceCell": "C54",
+    "id": "final-store-27aef3cf8897ae957c724b58fd519976",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 54,
+      "sourceCell": "C54",
+      "selling": "1625"
+    }
+  },
+  {
+    "name": "Aradite Fast",
+    "size": "1.08 kg",
+    "selling": "1785",
+    "category": "Adhesives & Sealants",
+    "type": "Adhesives",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 55,
+    "sourceCell": "C55",
+    "id": "final-store-c61d70d43fa54cbcd380c17cd1a1e8fc",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 55,
+      "sourceCell": "C55",
+      "selling": "1785"
+    }
+  },
+  {
+    "name": "Aradite Fast",
+    "size": "½ kg",
+    "selling": "1090",
+    "category": "Adhesives & Sealants",
+    "type": "Adhesives",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 56,
+    "sourceCell": "C56",
+    "id": "final-store-e58bdfb7aea6ed7bef2fbbda97b3d1c5",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 56,
+      "sourceCell": "C56",
+      "selling": "1090"
+    }
+  },
+  {
+    "name": "Terminator Wood",
+    "size": "200 ml",
+    "selling": "102",
+    "category": "Wood Care",
+    "type": "Terminator",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 58,
+    "sourceCell": "C58",
+    "id": "final-store-6cca722d55d02d65756091f3de1e613c",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 58,
+      "sourceCell": "C58",
+      "selling": "102"
+    }
+  },
+  {
+    "name": "Terminator Wood",
+    "size": "½ L",
+    "selling": "186",
+    "category": "Wood Care",
+    "type": "Terminator",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 59,
+    "sourceCell": "C59",
+    "id": "final-store-7cd72f8acb0d96a87779fd96440fe63b",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 59,
+      "sourceCell": "C59",
+      "selling": "186"
+    }
+  },
+  {
+    "name": "Terminator Structure",
+    "size": "200 ml",
+    "selling": "265",
+    "category": "Wood Care",
+    "type": "Terminator",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 60,
+    "sourceCell": "C60",
+    "id": "final-store-7aae8b976a6c82d72c9429ec79fccef1",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 60,
+      "sourceCell": "C60",
+      "selling": "265"
+    }
+  },
+  {
+    "name": "Terminator Structure",
+    "size": "½ L",
+    "selling": "490",
+    "category": "Wood Care",
+    "type": "Terminator",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 61,
+    "sourceCell": "C61",
+    "id": "final-store-dcdd5e56865bd0af8c0cefe69549388f",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 61,
+      "sourceCell": "C61",
+      "selling": "490"
+    }
+  },
+  {
+    "name": "3W Bulb",
+    "size": "",
+    "selling": "80",
+    "category": "Electrical",
+    "type": "Lighting",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 63,
+    "sourceCell": "C63",
+    "id": "final-store-63078c0930d81eefe24641b6782ee351",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 63,
+      "sourceCell": "C63",
+      "selling": "80"
+    }
+  },
+  {
+    "name": "Mini Laser Light",
+    "size": "Type 1",
+    "selling": "850",
+    "category": "Electrical",
+    "type": "Lighting",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 64,
+    "sourceCell": "C64",
+    "id": "final-store-8d75f4c908f023d4538c38cfe36ce254",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 64,
+      "sourceCell": "C64",
+      "selling": "850"
+    }
+  },
+  {
+    "name": "Mini Laser Light",
+    "size": "Type 2",
+    "selling": "1000",
+    "category": "Electrical",
+    "type": "Lighting",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 65,
+    "sourceCell": "C65",
+    "id": "final-store-7c6533f44903ecef4a977d35bcbecedd",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 65,
+      "sourceCell": "C65",
+      "selling": "1000"
+    }
+  },
+  {
+    "name": "Foot Valve",
+    "size": "1\"",
+    "selling": "110",
+    "category": "Valves",
+    "type": "Foot Valves",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 67,
+    "sourceCell": "C67",
+    "id": "final-store-586317bc57b142a8264e8708982fef78",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 67,
+      "sourceCell": "C67",
+      "selling": "110"
+    }
+  },
+  {
+    "name": "Foot Valve",
+    "size": "1¼\"",
+    "selling": "117",
+    "category": "Valves",
+    "type": "Foot Valves",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 68,
+    "sourceCell": "C68",
+    "id": "final-store-2fbbd8ae2a2e940bdee28427891b2801",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 68,
+      "sourceCell": "C68",
+      "selling": "117"
+    }
+  },
+  {
+    "name": "Foot Valve",
+    "size": "1½\"",
+    "selling": "175",
+    "category": "Valves",
+    "type": "Foot Valves",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 69,
+    "sourceCell": "C69",
+    "id": "final-store-afe1d51fa989527b498e09755408cccf",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 69,
+      "sourceCell": "C69",
+      "selling": "175"
+    }
+  },
+  {
+    "name": "Foot Valve",
+    "size": "2\"",
+    "selling": "250",
+    "category": "Valves",
+    "type": "Foot Valves",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 70,
+    "sourceCell": "C70",
+    "id": "final-store-ca54e6ce8ca7703083b3676fa5d7ea84",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 70,
+      "sourceCell": "C70",
+      "selling": "250"
+    }
+  },
+  {
+    "name": "Float Valve",
+    "size": "½\"",
+    "selling": "360",
+    "category": "Valves",
+    "type": "Float Valves",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 71,
+    "sourceCell": "C71",
+    "id": "final-store-4e5a1f2839cb9adbd3e5713ac3a0fdfd",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 71,
+      "sourceCell": "C71",
+      "selling": "360"
+    }
+  },
+  {
+    "category": "Valves",
+    "type": "Float Valves",
+    "name": "Float Wall",
+    "size": "3/4 inch",
+    "unit": "Piece",
+    "selling": "479",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1451
+    ],
+    "sourceIds": [
+      "1263"
+    ],
+    "notes": "",
+    "id": "final-6b5bb3c06ec145c4a70b6a4e753b1d59",
+    "baseSelling": "",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 72,
+      "sourceCell": "C72",
+      "selling": "479"
+    }
+  },
+  {
+    "name": "Float Valve",
+    "size": "1½\"",
+    "selling": "1060",
+    "category": "Valves",
+    "type": "Float Valves",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 73,
+    "sourceCell": "C73",
+    "id": "final-store-582405d297493372090e0ae2d0feeb7e",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 73,
+      "sourceCell": "C73",
+      "selling": "1060"
+    }
+  },
+  {
+    "name": "Flexible Pipe",
+    "size": "½\"",
+    "selling": "10",
+    "category": "Plumbing Accessories",
+    "type": "Flexible Pipes",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 75,
+    "sourceCell": "C75",
+    "id": "final-store-d75dd65debb91ae11c8006a354960154",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 75,
+      "sourceCell": "C75",
+      "selling": "10"
+    }
+  },
+  {
+    "name": "Flexible Pipe",
+    "size": "¾\"",
+    "selling": "15",
+    "category": "Plumbing Accessories",
+    "type": "Flexible Pipes",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 76,
+    "sourceCell": "C76",
+    "id": "final-store-e0f285257c1679d3d88de2e72bfe967e",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 76,
+      "sourceCell": "C76",
+      "selling": "15"
+    }
+  },
+  {
+    "name": "Flexible Pipe",
+    "size": "1\"",
+    "selling": "20",
+    "category": "Plumbing Accessories",
+    "type": "Flexible Pipes",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 77,
+    "sourceCell": "C77",
+    "id": "final-store-8f4ce731024a4a848cd98965169818ba",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 77,
+      "sourceCell": "C77",
+      "selling": "20"
+    }
+  },
+  {
+    "name": "Sand Roll",
+    "size": "",
+    "selling": "60",
+    "category": "Home Essentials",
+    "type": "General",
+    "unit": "Meter",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 79,
+    "sourceCell": "C79",
+    "id": "final-store-3d82dbcd0135f10d94a2e0c3267cabc3",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 79,
+      "sourceCell": "C79",
+      "selling": "60"
+    }
+  },
+  {
+    "name": "Caution Tape",
+    "size": "",
+    "selling": "400",
+    "category": "Home Essentials",
+    "type": "General",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 80,
+    "sourceCell": "C80",
+    "id": "final-store-cb65a63374af719bc3ff244796e34e98",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 80,
+      "sourceCell": "C80",
+      "selling": "400"
+    }
+  },
+  {
+    "name": "Distilled Water",
+    "size": "1 L",
+    "selling": "50",
+    "category": "Home Essentials",
+    "type": "General",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 81,
+    "sourceCell": "C81",
+    "id": "final-store-8ad655c99ec5e45d2f248fb217301dbe",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 81,
+      "sourceCell": "C81",
+      "selling": "50"
+    }
+  },
+  {
+    "name": "Distilled Water",
+    "size": "5 L",
+    "selling": "150",
+    "category": "Home Essentials",
+    "type": "General",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 82,
+    "sourceCell": "C82",
+    "id": "final-store-04787df7b59ca101870b0aeefba1a9ed",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 82,
+      "sourceCell": "C82",
+      "selling": "150"
+    }
+  },
+  {
+    "name": "Soldering Machine",
+    "size": "",
+    "selling": "500",
+    "category": "Home Essentials",
+    "type": "General",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 83,
+    "sourceCell": "C83",
+    "id": "final-store-f8b91f04ede3ea0452e5df72e374cbfe",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 83,
+      "sourceCell": "C83",
+      "selling": "500"
+    }
+  },
+  {
+    "name": "Spray Bottle",
+    "size": "",
+    "selling": "50",
+    "category": "Home Essentials",
+    "type": "General",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 84,
+    "sourceCell": "C84",
+    "id": "final-store-ab5699dc279bd7e684ad87b6f0169a99",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 84,
+      "sourceCell": "C84",
+      "selling": "50"
+    }
+  },
+  {
+    "name": "Dust Removal",
+    "size": "",
+    "selling": "240",
+    "category": "Home Essentials",
+    "type": "General",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 85,
+    "sourceCell": "C85",
+    "id": "final-store-3a571db6cd8a1a7512bc9babc358c399",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 85,
+      "sourceCell": "C85",
+      "selling": "240"
+    }
+  },
+  {
+    "name": "Shovel",
+    "size": "",
+    "selling": "700",
+    "category": "Home Essentials",
+    "type": "General",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 86,
+    "sourceCell": "C86",
+    "id": "final-store-3c65e906d47c0ffe8d2b3448fc0eb070",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 86,
+      "sourceCell": "C86",
+      "selling": "700"
+    }
+  },
+  {
+    "name": "Bus Brush",
+    "size": "",
+    "selling": "180",
+    "category": "Home Essentials",
+    "type": "General",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 87,
+    "sourceCell": "C87",
+    "id": "final-store-c5eac22e5384f10556ea9044de9f7339",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 87,
+      "sourceCell": "C87",
+      "selling": "180"
+    }
+  },
+  {
+    "name": "Kitchen Wiper",
+    "size": "",
+    "selling": "100",
+    "category": "Home Essentials",
+    "type": "General",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 88,
+    "sourceCell": "C88",
+    "id": "final-store-36536c6997a6da1dc0232ed2e84e277b",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 88,
+      "sourceCell": "C88",
+      "selling": "100"
+    }
+  },
+  {
+    "name": "Kol",
+    "size": "",
+    "selling": "80",
+    "category": "Home Essentials",
+    "type": "General",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 89,
+    "sourceCell": "C89",
+    "id": "final-store-442a7da0d222d4acacd9b0d79288e98b",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 89,
+      "sourceCell": "C89",
+      "selling": "80"
+    }
+  },
+  {
+    "name": "Mop Cloth",
+    "size": "Type 1",
+    "selling": "180",
+    "category": "Home Essentials",
+    "type": "General",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 90,
+    "sourceCell": "C90",
+    "id": "final-store-6f11c8b0606f285715f331eb107da3e9",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 90,
+      "sourceCell": "C90",
+      "selling": "180"
+    }
+  },
+  {
+    "name": "Mop Cloth",
+    "size": "Type 2",
+    "selling": "100",
+    "category": "Home Essentials",
+    "type": "General",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Price List",
+    "sourceRow": 91,
+    "sourceCell": "C91",
+    "id": "final-store-92d71728a282a35479f4e61f569c757b",
+    "storeSource": {
+      "sourceSheet": "Price List",
+      "sourceRow": 91,
+      "sourceCell": "C91",
+      "selling": "100"
+    }
+  },
+  {
+    "name": "PVC Ball Valve",
+    "size": "½\"",
+    "selling": "90",
+    "category": "Valves",
+    "type": "Ball Valve",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Ball Valve",
+    "sourceRow": 3,
+    "sourceCell": "B3",
+    "id": "final-store-3e2a39354b1e755850a31ba5dd9bbe55",
+    "storeSource": {
+      "sourceSheet": "Ball Valve",
+      "sourceRow": 3,
+      "sourceCell": "B3",
+      "selling": "90"
+    }
+  },
+  {
+    "name": "UPVC Ball Valve",
+    "size": "½\"",
+    "selling": "151",
+    "category": "Valves",
+    "type": "Ball Valve",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Ball Valve",
+    "sourceRow": 3,
+    "sourceCell": "C3",
+    "id": "final-store-3b6778666c7c79edcb7cd006e76671b2",
+    "storeSource": {
+      "sourceSheet": "Ball Valve",
+      "sourceRow": 3,
+      "sourceCell": "C3",
+      "selling": "151"
+    }
+  },
+  {
+    "name": "CPVC Ball Valve",
+    "size": "½\"",
+    "selling": "164",
+    "category": "Valves",
+    "type": "Ball Valve",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Ball Valve",
+    "sourceRow": 3,
+    "sourceCell": "D3",
+    "id": "final-store-38500788cc1704d4a64236b3476a1ba9",
+    "storeSource": {
+      "sourceSheet": "Ball Valve",
+      "sourceRow": 3,
+      "sourceCell": "D3",
+      "selling": "164"
+    }
+  },
+  {
+    "name": "PVC Ball Valve",
+    "size": "¾\"",
+    "selling": "110",
+    "category": "Valves",
+    "type": "Ball Valve",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Ball Valve",
+    "sourceRow": 4,
+    "sourceCell": "B4",
+    "id": "final-store-6ebf3b0cae99445fac34c6baa8fde969",
+    "storeSource": {
+      "sourceSheet": "Ball Valve",
+      "sourceRow": 4,
+      "sourceCell": "B4",
+      "selling": "110"
+    }
+  },
+  {
+    "name": "UPVC Ball Valve",
+    "size": "¾\"",
+    "selling": "195",
+    "category": "Valves",
+    "type": "Ball Valve",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Ball Valve",
+    "sourceRow": 4,
+    "sourceCell": "C4",
+    "id": "final-store-8bbc97dcbe5c63f9b891516b226f4260",
+    "storeSource": {
+      "sourceSheet": "Ball Valve",
+      "sourceRow": 4,
+      "sourceCell": "C4",
+      "selling": "195"
+    }
+  },
+  {
+    "category": "Valves",
+    "type": "Ball Valve",
+    "name": "CPVC Ball Valve",
+    "size": "3/4 inch",
+    "unit": "Piece",
+    "selling": "250",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1449
+    ],
+    "sourceIds": [
+      "1127"
+    ],
+    "notes": "",
+    "id": "final-0f3f181e96388df2b2823a25abf7fc00",
+    "baseSelling": "",
+    "storeSource": {
+      "sourceSheet": "Ball Valve",
+      "sourceRow": 4,
+      "sourceCell": "D4",
+      "selling": "250"
+    }
+  },
+  {
+    "name": "PVC Ball Valve",
+    "size": "1\"",
+    "selling": "135",
+    "category": "Valves",
+    "type": "Ball Valve",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Ball Valve",
+    "sourceRow": 5,
+    "sourceCell": "B5",
+    "id": "final-store-1d8358ef5b1cfa2b1287c06e8f6c51cd",
+    "storeSource": {
+      "sourceSheet": "Ball Valve",
+      "sourceRow": 5,
+      "sourceCell": "B5",
+      "selling": "135"
+    }
+  },
+  {
+    "name": "UPVC Ball Valve",
+    "size": "1\"",
+    "selling": "252",
+    "category": "Valves",
+    "type": "Ball Valve",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Ball Valve",
+    "sourceRow": 5,
+    "sourceCell": "C5",
+    "id": "final-store-30c07efa57134c439c559e514ccddfb4",
+    "storeSource": {
+      "sourceSheet": "Ball Valve",
+      "sourceRow": 5,
+      "sourceCell": "C5",
+      "selling": "252"
+    }
+  },
+  {
+    "name": "CPVC Ball Valve",
+    "size": "1\"",
+    "selling": "350",
+    "category": "Valves",
+    "type": "Ball Valve",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Ball Valve",
+    "sourceRow": 5,
+    "sourceCell": "D5",
+    "id": "final-store-f6877cb6afd7d783b71deeeb96f2b376",
+    "storeSource": {
+      "sourceSheet": "Ball Valve",
+      "sourceRow": 5,
+      "sourceCell": "D5",
+      "selling": "350"
+    }
+  },
+  {
+    "name": "PVC Ball Valve",
+    "size": "1¼\"",
+    "selling": "220",
+    "category": "Valves",
+    "type": "Ball Valve",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Ball Valve",
+    "sourceRow": 6,
+    "sourceCell": "B6",
+    "id": "final-store-37e8c05a4a2c6ae8a735dccd931c76d2",
+    "storeSource": {
+      "sourceSheet": "Ball Valve",
+      "sourceRow": 6,
+      "sourceCell": "B6",
+      "selling": "220"
+    }
+  },
+  {
+    "name": "UPVC Ball Valve",
+    "size": "1¼\"",
+    "selling": "342",
+    "category": "Valves",
+    "type": "Ball Valve",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Ball Valve",
+    "sourceRow": 6,
+    "sourceCell": "C6",
+    "id": "final-store-48a6bec3b8971986deee8fa680574701",
+    "storeSource": {
+      "sourceSheet": "Ball Valve",
+      "sourceRow": 6,
+      "sourceCell": "C6",
+      "selling": "342"
+    }
+  },
+  {
+    "name": "PVC Ball Valve",
+    "size": "1½\"",
+    "selling": "260",
+    "category": "Valves",
+    "type": "Ball Valve",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Ball Valve",
+    "sourceRow": 7,
+    "sourceCell": "B7",
+    "id": "final-store-f867508c24b7dccdaaf4413bbaf98929",
+    "storeSource": {
+      "sourceSheet": "Ball Valve",
+      "sourceRow": 7,
+      "sourceCell": "B7",
+      "selling": "260"
+    }
+  },
+  {
+    "category": "Valves",
+    "type": "Ball Valve",
+    "name": "UPVC Ball Valve",
+    "size": "1.5 inch",
+    "unit": "Piece",
+    "selling": "470",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1438
+    ],
+    "sourceIds": [
+      "219"
+    ],
+    "notes": "",
+    "id": "final-4f9eff96d362ea745bd00484122e89a8",
+    "baseSelling": "470",
+    "storeSource": {
+      "sourceSheet": "Ball Valve",
+      "sourceRow": 7,
+      "sourceCell": "C7",
+      "selling": "478"
+    }
+  },
+  {
+    "category": "Valves",
+    "type": "Ball Valve",
+    "name": "Ball Valve PVC",
+    "size": "2 inch",
+    "unit": "Piece",
+    "selling": "731",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1445
+    ],
+    "sourceIds": [
+      "982"
+    ],
+    "notes": "",
+    "id": "final-24da5988d7897ef2d403c86cee6dd4d5",
+    "baseSelling": "",
+    "storeSource": {
+      "sourceSheet": "Ball Valve",
+      "sourceRow": 8,
+      "sourceCell": "B8",
+      "selling": "731"
+    }
+  },
+  {
+    "name": "UPVC Ball Valve",
+    "size": "2\"",
+    "selling": "731",
+    "category": "Valves",
+    "type": "Ball Valve",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Ball Valve",
+    "sourceRow": 8,
+    "sourceCell": "C8",
+    "id": "final-store-7f25f426d55fe493177520d0ddacea9e",
+    "storeSource": {
+      "sourceSheet": "Ball Valve",
+      "sourceRow": 8,
+      "sourceCell": "C8",
+      "selling": "731"
+    }
+  },
+  {
+    "name": "C-Clip",
+    "size": "4 mm",
+    "selling": "50",
+    "category": "Electrical",
+    "type": "Cable Clips",
+    "unit": "Pack",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "C-Clip & Allen Key",
+    "sourceRow": 3,
+    "sourceCell": "B3",
+    "id": "final-store-f098b993108de589677ee329ab2da153",
+    "storeSource": {
+      "sourceSheet": "C-Clip & Allen Key",
+      "sourceRow": 3,
+      "sourceCell": "B3",
+      "selling": "50"
+    }
+  },
+  {
+    "name": "Allen Key",
+    "size": "2 mm",
+    "selling": "30",
+    "category": "Tools",
+    "type": "Allen Keys",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "C-Clip & Allen Key",
+    "sourceRow": 3,
+    "sourceCell": "E3",
+    "id": "final-store-09aa9ed11b01c9e7cb76b07395687f6c",
+    "storeSource": {
+      "sourceSheet": "C-Clip & Allen Key",
+      "sourceRow": 3,
+      "sourceCell": "E3",
+      "selling": "30"
+    }
+  },
+  {
+    "name": "C-Clip",
+    "size": "5 mm",
+    "selling": "60",
+    "category": "Electrical",
+    "type": "Cable Clips",
+    "unit": "Pack",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "C-Clip & Allen Key",
+    "sourceRow": 4,
+    "sourceCell": "B4",
+    "id": "final-store-463d84f3cd20a2ca912fbfaf7f95604f",
+    "storeSource": {
+      "sourceSheet": "C-Clip & Allen Key",
+      "sourceRow": 4,
+      "sourceCell": "B4",
+      "selling": "60"
+    }
+  },
+  {
+    "name": "Allen Key",
+    "size": "2.5 mm",
+    "selling": "35",
+    "category": "Tools",
+    "type": "Allen Keys",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "C-Clip & Allen Key",
+    "sourceRow": 4,
+    "sourceCell": "E4",
+    "id": "final-store-4eff4538bfc83b4fd3cb84d4ce8bff54",
+    "storeSource": {
+      "sourceSheet": "C-Clip & Allen Key",
+      "sourceRow": 4,
+      "sourceCell": "E4",
+      "selling": "35"
+    }
+  },
+  {
+    "name": "C-Clip",
+    "size": "6 mm",
+    "selling": "70",
+    "category": "Electrical",
+    "type": "Cable Clips",
+    "unit": "Pack",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "C-Clip & Allen Key",
+    "sourceRow": 5,
+    "sourceCell": "B5",
+    "id": "final-store-9fe39356bcd7dc9e19216e0df0894d5f",
+    "storeSource": {
+      "sourceSheet": "C-Clip & Allen Key",
+      "sourceRow": 5,
+      "sourceCell": "B5",
+      "selling": "70"
+    }
+  },
+  {
+    "name": "Allen Key",
+    "size": "3 mm",
+    "selling": "40",
+    "category": "Tools",
+    "type": "Allen Keys",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "C-Clip & Allen Key",
+    "sourceRow": 5,
+    "sourceCell": "E5",
+    "id": "final-store-f54a51d146f97a297b198d15828807c9",
+    "storeSource": {
+      "sourceSheet": "C-Clip & Allen Key",
+      "sourceRow": 5,
+      "sourceCell": "E5",
+      "selling": "40"
+    }
+  },
+  {
+    "name": "C-Clip",
+    "size": "8 mm",
+    "selling": "75",
+    "category": "Electrical",
+    "type": "Cable Clips",
+    "unit": "Pack",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "C-Clip & Allen Key",
+    "sourceRow": 6,
+    "sourceCell": "B6",
+    "id": "final-store-ee793edeaaa3c4ddfd8816c59af240a2",
+    "storeSource": {
+      "sourceSheet": "C-Clip & Allen Key",
+      "sourceRow": 6,
+      "sourceCell": "B6",
+      "selling": "75"
+    }
+  },
+  {
+    "name": "Allen Key",
+    "size": "4 mm",
+    "selling": "50",
+    "category": "Tools",
+    "type": "Allen Keys",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "C-Clip & Allen Key",
+    "sourceRow": 6,
+    "sourceCell": "E6",
+    "id": "final-store-32af6325b6cc03ef7a7c74699858f73f",
+    "storeSource": {
+      "sourceSheet": "C-Clip & Allen Key",
+      "sourceRow": 6,
+      "sourceCell": "E6",
+      "selling": "50"
+    }
+  },
+  {
+    "name": "C-Clip",
+    "size": "10 mm",
+    "selling": "102",
+    "category": "Electrical",
+    "type": "Cable Clips",
+    "unit": "Pack",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "C-Clip & Allen Key",
+    "sourceRow": 7,
+    "sourceCell": "B7",
+    "id": "final-store-22523d755f36755b2bb099234da3f938",
+    "storeSource": {
+      "sourceSheet": "C-Clip & Allen Key",
+      "sourceRow": 7,
+      "sourceCell": "B7",
+      "selling": "102"
+    }
+  },
+  {
+    "name": "Allen Key",
+    "size": "5 mm",
+    "selling": "70",
+    "category": "Tools",
+    "type": "Allen Keys",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "C-Clip & Allen Key",
+    "sourceRow": 7,
+    "sourceCell": "E7",
+    "id": "final-store-88db335d191235641e66df416da7e5c4",
+    "storeSource": {
+      "sourceSheet": "C-Clip & Allen Key",
+      "sourceRow": 7,
+      "sourceCell": "E7",
+      "selling": "70"
+    }
+  },
+  {
+    "name": "Allen Key",
+    "size": "6 mm",
+    "selling": "100",
+    "category": "Tools",
+    "type": "Allen Keys",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "C-Clip & Allen Key",
+    "sourceRow": 8,
+    "sourceCell": "E8",
+    "id": "final-store-154b92bd382e63585a0e9fb46d0e0be6",
+    "storeSource": {
+      "sourceSheet": "C-Clip & Allen Key",
+      "sourceRow": 8,
+      "sourceCell": "E8",
+      "selling": "100"
+    }
+  },
+  {
+    "name": "Allen Key",
+    "size": "7 mm",
+    "selling": "110",
+    "category": "Tools",
+    "type": "Allen Keys",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "C-Clip & Allen Key",
+    "sourceRow": 9,
+    "sourceCell": "E9",
+    "id": "final-store-74b7088e20fbf63bd96120cdd33ddc94",
+    "storeSource": {
+      "sourceSheet": "C-Clip & Allen Key",
+      "sourceRow": 9,
+      "sourceCell": "E9",
+      "selling": "110"
+    }
+  },
+  {
+    "name": "Allen Key",
+    "size": "8 mm",
+    "selling": "130",
+    "category": "Tools",
+    "type": "Allen Keys",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "C-Clip & Allen Key",
+    "sourceRow": 10,
+    "sourceCell": "E10",
+    "id": "final-store-8963becbb49723b3cf56dbc7a7da798d",
+    "storeSource": {
+      "sourceSheet": "C-Clip & Allen Key",
+      "sourceRow": 10,
+      "sourceCell": "E10",
+      "selling": "130"
+    }
+  },
+  {
+    "name": "Allen Key",
+    "size": "10 mm",
+    "selling": "150",
+    "category": "Tools",
+    "type": "Allen Keys",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "C-Clip & Allen Key",
+    "sourceRow": 11,
+    "sourceCell": "E11",
+    "id": "final-store-4132a04646078d777581c1447cb2d5a4",
+    "storeSource": {
+      "sourceSheet": "C-Clip & Allen Key",
+      "sourceRow": 11,
+      "sourceCell": "E11",
+      "selling": "150"
+    }
+  },
+  {
+    "name": "Allen Key",
+    "size": "12 mm",
+    "selling": "180",
+    "category": "Tools",
+    "type": "Allen Keys",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "C-Clip & Allen Key",
+    "sourceRow": 12,
+    "sourceCell": "E12",
+    "id": "final-store-c45815c4a018e56c25959598c74a38f4",
+    "storeSource": {
+      "sourceSheet": "C-Clip & Allen Key",
+      "sourceRow": 12,
+      "sourceCell": "E12",
+      "selling": "180"
+    }
+  },
+  {
+    "name": "Candes Ceiling Fan",
+    "size": "",
+    "selling": "2349",
+    "category": "Electrical",
+    "type": "Ceiling Fans",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Electrical & Fans",
+    "sourceRow": 4,
+    "sourceCell": "C4",
+    "id": "final-store-6d641ce2b17a42252a00309a886f763f",
+    "storeSource": {
+      "sourceSheet": "Electrical & Fans",
+      "sourceRow": 4,
+      "sourceCell": "C4",
+      "selling": "2349"
+    }
+  },
+  {
+    "name": "Koreal Ceiling Fan",
+    "size": "",
+    "selling": "2995",
+    "category": "Electrical",
+    "type": "Ceiling Fans",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Electrical & Fans",
+    "sourceRow": 5,
+    "sourceCell": "C5",
+    "id": "final-store-2d513028d823a60e9e73fd1d793fd0e2",
+    "storeSource": {
+      "sourceSheet": "Electrical & Fans",
+      "sourceRow": 5,
+      "sourceCell": "C5",
+      "selling": "2995"
+    }
+  },
+  {
+    "name": "Gold Medal Ceiling Fan",
+    "size": "",
+    "selling": "2900",
+    "category": "Electrical",
+    "type": "Ceiling Fans",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Electrical & Fans",
+    "sourceRow": 6,
+    "sourceCell": "C6",
+    "id": "final-store-5260b6c0f3c55f2e6b5746d44f3fbb96",
+    "storeSource": {
+      "sourceSheet": "Electrical & Fans",
+      "sourceRow": 6,
+      "sourceCell": "C6",
+      "selling": "2900"
+    }
+  },
+  {
+    "name": "Oriental Ceiling Fan",
+    "size": "",
+    "selling": "1799",
+    "category": "Electrical",
+    "type": "Ceiling Fans",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Electrical & Fans",
+    "sourceRow": 7,
+    "sourceCell": "C7",
+    "id": "final-store-8ac5524650e2d8a96075ce7a7a7f01df",
+    "storeSource": {
+      "sourceSheet": "Electrical & Fans",
+      "sourceRow": 7,
+      "sourceCell": "C7",
+      "selling": "1799"
+    }
+  },
+  {
+    "name": "V-Guard Ceiling Fan",
+    "size": "",
+    "selling": "2690",
+    "category": "Electrical",
+    "type": "Ceiling Fans",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Electrical & Fans",
+    "sourceRow": 8,
+    "sourceCell": "C8",
+    "id": "final-store-633696f266fa452047c4bbb3384b7a75",
+    "storeSource": {
+      "sourceSheet": "Electrical & Fans",
+      "sourceRow": 8,
+      "sourceCell": "C8",
+      "selling": "2690"
+    }
+  },
+  {
+    "name": "Surya Ceiling Fan",
+    "size": "",
+    "selling": "2755",
+    "category": "Electrical",
+    "type": "Ceiling Fans",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Electrical & Fans",
+    "sourceRow": 9,
+    "sourceCell": "C9",
+    "id": "final-store-ba673a8e5eadb68ecbee2c0a1a981df4",
+    "storeSource": {
+      "sourceSheet": "Electrical & Fans",
+      "sourceRow": 9,
+      "sourceCell": "C9",
+      "selling": "2755"
+    }
+  },
+  {
+    "name": "Polycab Ceiling Fan",
+    "size": "",
+    "selling": "2300",
+    "category": "Electrical",
+    "type": "Ceiling Fans",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Electrical & Fans",
+    "sourceRow": 10,
+    "sourceCell": "C10",
+    "id": "final-store-49693fa7d61bb4d38d7d66fd7ba50896",
+    "storeSource": {
+      "sourceSheet": "Electrical & Fans",
+      "sourceRow": 10,
+      "sourceCell": "C10",
+      "selling": "2300"
+    }
+  },
+  {
+    "name": "GM Exhaust Fan",
+    "size": "150 mm",
+    "selling": "1600",
+    "category": "Electrical",
+    "type": "Exhaust Fans",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Electrical & Fans",
+    "sourceRow": 12,
+    "sourceCell": "C12",
+    "id": "final-store-ff1d5597b32a5eab41cfd8c7219e7d1b",
+    "storeSource": {
+      "sourceSheet": "Electrical & Fans",
+      "sourceRow": 12,
+      "sourceCell": "C12",
+      "selling": "1600"
+    }
+  },
+  {
+    "name": "Gold Medal Exhaust Fan",
+    "size": "150 mm",
+    "selling": "2050",
+    "category": "Electrical",
+    "type": "Exhaust Fans",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Electrical & Fans",
+    "sourceRow": 13,
+    "sourceCell": "C13",
+    "id": "final-store-c27f3752a719a3841820e30670f351be",
+    "storeSource": {
+      "sourceSheet": "Electrical & Fans",
+      "sourceRow": 13,
+      "sourceCell": "C13",
+      "selling": "2050"
+    }
+  },
+  {
+    "name": "Surya Exhaust Fan",
+    "size": "150 mm",
+    "selling": "1690",
+    "category": "Electrical",
+    "type": "Exhaust Fans",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Electrical & Fans",
+    "sourceRow": 14,
+    "sourceCell": "C14",
+    "id": "final-store-45566f0bf451bd321ded57e8c3090a34",
+    "storeSource": {
+      "sourceSheet": "Electrical & Fans",
+      "sourceRow": 14,
+      "sourceCell": "C14",
+      "selling": "1690"
+    }
+  },
+  {
+    "name": "GM Exhaust Fan",
+    "size": "200 mm",
+    "selling": "1775",
+    "category": "Electrical",
+    "type": "Exhaust Fans",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Electrical & Fans",
+    "sourceRow": 15,
+    "sourceCell": "C15",
+    "id": "final-store-7e287a7e7b4039481fa432907e2cd5bc",
+    "storeSource": {
+      "sourceSheet": "Electrical & Fans",
+      "sourceRow": 15,
+      "sourceCell": "C15",
+      "selling": "1775"
+    }
+  },
+  {
+    "name": "Gold Medal Table Fan",
+    "size": "230 mm",
+    "selling": "2900",
+    "category": "Electrical",
+    "type": "Table Fans",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Electrical & Fans",
+    "sourceRow": 17,
+    "sourceCell": "C17",
+    "id": "final-store-7a00f9759e27fc58c7437ea7cf9321ba",
+    "storeSource": {
+      "sourceSheet": "Electrical & Fans",
+      "sourceRow": 17,
+      "sourceCell": "C17",
+      "selling": "2900"
+    }
+  },
+  {
+    "name": "Wrench",
+    "size": "12 mm",
+    "selling": "535",
+    "category": "Tools",
+    "type": "Hand Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Electrical & Fans",
+    "sourceRow": 19,
+    "sourceCell": "C19",
+    "id": "final-store-38ccd0d37166c8adce9c2e03c16f260e",
+    "storeSource": {
+      "sourceSheet": "Electrical & Fans",
+      "sourceRow": 19,
+      "sourceCell": "C19",
+      "selling": "535"
+    }
+  },
+  {
+    "name": "Wire Stripper",
+    "size": "",
+    "selling": "69",
+    "category": "Tools",
+    "type": "Hand Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Electrical & Fans",
+    "sourceRow": 20,
+    "sourceCell": "C20",
+    "id": "final-store-0a31a4fdb122650bce903162aca57d57",
+    "storeSource": {
+      "sourceSheet": "Electrical & Fans",
+      "sourceRow": 20,
+      "sourceCell": "C20",
+      "selling": "69"
+    }
+  },
+  {
+    "name": "Right Angle",
+    "size": "10\"",
+    "selling": "250",
+    "category": "Tools",
+    "type": "Hand Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Electrical & Fans",
+    "sourceRow": 21,
+    "sourceCell": "C21",
+    "id": "final-store-57a5ecdf854a6581821508d9a68171ea",
+    "storeSource": {
+      "sourceSheet": "Electrical & Fans",
+      "sourceRow": 21,
+      "sourceCell": "C21",
+      "selling": "250"
+    }
+  },
+  {
+    "name": "Right Angle",
+    "size": "12\"",
+    "selling": "400",
+    "category": "Tools",
+    "type": "Hand Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Electrical & Fans",
+    "sourceRow": 22,
+    "sourceCell": "C22",
+    "id": "final-store-9b6abc98f5ca9264220feec22add07a6",
+    "storeSource": {
+      "sourceSheet": "Electrical & Fans",
+      "sourceRow": 22,
+      "sourceCell": "C22",
+      "selling": "400"
+    }
+  },
+  {
+    "name": "Cutting Spring Wire",
+    "size": "",
+    "selling": "500",
+    "category": "Tools",
+    "type": "Hand Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Electrical & Fans",
+    "sourceRow": 23,
+    "sourceCell": "C23",
+    "id": "final-store-7123a6bf01ab1cb0191d59aa327ba0a9",
+    "storeSource": {
+      "sourceSheet": "Electrical & Fans",
+      "sourceRow": 23,
+      "sourceCell": "C23",
+      "selling": "500"
+    }
+  },
+  {
+    "name": "Hammer Head",
+    "size": "",
+    "selling": "209",
+    "category": "Tools",
+    "type": "Hand Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Electrical & Fans",
+    "sourceRow": 24,
+    "sourceCell": "C24",
+    "id": "final-store-12a3c1b129d4ea64718ada80ffe6efd7",
+    "storeSource": {
+      "sourceSheet": "Electrical & Fans",
+      "sourceRow": 24,
+      "sourceCell": "C24",
+      "selling": "209"
+    }
+  },
+  {
+    "name": "Spray Gun",
+    "size": "Type 1",
+    "selling": "250",
+    "category": "Tools",
+    "type": "Hand Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Electrical & Fans",
+    "sourceRow": 25,
+    "sourceCell": "C25",
+    "id": "final-store-68f4941d74b0458e0d613609fc2b960b",
+    "storeSource": {
+      "sourceSheet": "Electrical & Fans",
+      "sourceRow": 25,
+      "sourceCell": "C25",
+      "selling": "250"
+    }
+  },
+  {
+    "name": "Spray Gun",
+    "size": "Type 2",
+    "selling": "200",
+    "category": "Tools",
+    "type": "Hand Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Electrical & Fans",
+    "sourceRow": 26,
+    "sourceCell": "C26",
+    "id": "final-store-6f8eab4567cb9f05c1bfd39ea612f851",
+    "storeSource": {
+      "sourceSheet": "Electrical & Fans",
+      "sourceRow": 26,
+      "sourceCell": "C26",
+      "selling": "200"
+    }
+  },
+  {
+    "category": "Welding Supplies",
+    "type": "Equipment",
+    "name": "Bhatti",
+    "size": "01",
+    "unit": "Piece",
+    "selling": "350",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1575
+    ],
+    "sourceIds": [
+      "1760"
+    ],
+    "notes": "Added from corrected price list",
+    "id": "final-836f4e4a235ed0efe581c667675deee2",
+    "baseSelling": "350",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 4,
+      "sourceCell": "C4",
+      "selling": "350"
+    }
+  },
+  {
+    "category": "Welding Supplies",
+    "type": "Equipment",
+    "name": "Bhatti",
+    "size": "02",
+    "unit": "Piece",
+    "selling": "330",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1576
+    ],
+    "sourceIds": [
+      "1761"
+    ],
+    "notes": "Added from corrected price list",
+    "id": "final-3db5fd1932bf1610b2f94399983ae2ee",
+    "baseSelling": "330",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 5,
+      "sourceCell": "C5",
+      "selling": "300"
+    }
+  },
+  {
+    "category": "Welding Supplies",
+    "type": "Equipment",
+    "name": "Bhatti",
+    "size": "03",
+    "unit": "Piece",
+    "selling": "300",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1577
+    ],
+    "sourceIds": [
+      "1762"
+    ],
+    "notes": "Added from corrected price list",
+    "id": "final-7531acbdc8d733cd07cf1e627518e164",
+    "baseSelling": "300",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 6,
+      "sourceCell": "C6",
+      "selling": "300"
+    }
+  },
+  {
+    "category": "Welding Supplies",
+    "type": "Equipment",
+    "name": "Bhatti",
+    "size": "04",
+    "unit": "Piece",
+    "selling": "290",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1578
+    ],
+    "sourceIds": [
+      "1763"
+    ],
+    "notes": "Added from corrected price list",
+    "id": "final-106bc35adca6875d537374526aaaa5d5",
+    "baseSelling": "290",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 7,
+      "sourceCell": "C7",
+      "selling": "290"
+    }
+  },
+  {
+    "name": "Bhatti",
+    "size": "05",
+    "selling": "280",
+    "category": "Welding Supplies",
+    "type": "Equipment",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 8,
+    "sourceCell": "C8",
+    "id": "final-store-ba60f63062cb4bc0867066432152124f",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 8,
+      "sourceCell": "C8",
+      "selling": "280"
+    }
+  },
+  {
+    "name": "Chatti",
+    "size": "01",
+    "selling": "140",
+    "category": "Home Essentials",
+    "type": "Chatti",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 10,
+    "sourceCell": "C10",
+    "id": "final-store-ae2f57b387767968986f2a0124a5a936",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 10,
+      "sourceCell": "C10",
+      "selling": "140"
+    }
+  },
+  {
+    "name": "Chatti",
+    "size": "02",
+    "selling": "130",
+    "category": "Home Essentials",
+    "type": "Chatti",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 11,
+    "sourceCell": "C11",
+    "id": "final-store-c6f201d270d310b3cc51918052524e6b",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 11,
+      "sourceCell": "C11",
+      "selling": "130"
+    }
+  },
+  {
+    "name": "Mirror",
+    "size": "01",
+    "selling": "150",
+    "category": "Home Essentials",
+    "type": "Mirrors",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 13,
+    "sourceCell": "C13",
+    "id": "final-store-f670046336405d11feb62a40e335740e",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 13,
+      "sourceCell": "C13",
+      "selling": "150"
+    }
+  },
+  {
+    "name": "Mirror",
+    "size": "02",
+    "selling": "200",
+    "category": "Home Essentials",
+    "type": "Mirrors",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 14,
+    "sourceCell": "C14",
+    "id": "final-store-b0e9046d3d5ef5b449c73e11b94f8b30",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 14,
+      "sourceCell": "C14",
+      "selling": "200"
+    }
+  },
+  {
+    "name": "Mirror",
+    "size": "03",
+    "selling": "100",
+    "category": "Home Essentials",
+    "type": "Mirrors",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 15,
+    "sourceCell": "C15",
+    "id": "final-store-d11f01dd92417cbcefd44d70e6509399",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 15,
+      "sourceCell": "C15",
+      "selling": "100"
+    }
+  },
+  {
+    "name": "Mirror",
+    "size": "04",
+    "selling": "250",
+    "category": "Home Essentials",
+    "type": "Mirrors",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 16,
+    "sourceCell": "C16",
+    "id": "final-store-e19fc288a41881da1c1f30283f7169cb",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 16,
+      "sourceCell": "C16",
+      "selling": "250"
+    }
+  },
+  {
+    "name": "Mirror",
+    "size": "05",
+    "selling": "300",
+    "category": "Home Essentials",
+    "type": "Mirrors",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 17,
+    "sourceCell": "C17",
+    "id": "final-store-5fc8e8ecab428db93c194a0184bfd914",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 17,
+      "sourceCell": "C17",
+      "selling": "300"
+    }
+  },
+  {
+    "name": "Mirror",
+    "size": "06",
+    "selling": "350",
+    "category": "Home Essentials",
+    "type": "Mirrors",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 18,
+    "sourceCell": "C18",
+    "id": "final-store-d6bc59f2c9c203e96817bb492a84ac7e",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 18,
+      "sourceCell": "C18",
+      "selling": "350"
+    }
+  },
+  {
+    "name": "Gold Mirror",
+    "size": "",
+    "selling": "600",
+    "category": "Home Essentials",
+    "type": "Mirrors",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 19,
+    "sourceCell": "C19",
+    "id": "final-store-731d28c62f820eb13d523381dd8a1e4f",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 19,
+      "sourceCell": "C19",
+      "selling": "600"
+    }
+  },
+  {
+    "name": "Brown Frame Prime Mirror",
+    "size": "01",
+    "selling": "500",
+    "category": "Home Essentials",
+    "type": "Mirrors",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 20,
+    "sourceCell": "C20",
+    "id": "final-store-2e0a921902f9edecc07eab1c927911c4",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 20,
+      "sourceCell": "C20",
+      "selling": "500"
+    }
+  },
+  {
+    "name": "Brown Frame Prime Mirror",
+    "size": "02",
+    "selling": "750",
+    "category": "Home Essentials",
+    "type": "Mirrors",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 21,
+    "sourceCell": "C21",
+    "id": "final-store-f90431cd5ce50921a8b1385d631fed85",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 21,
+      "sourceCell": "C21",
+      "selling": "750"
+    }
+  },
+  {
+    "name": "Brown Frame Prime Mirror",
+    "size": "03",
+    "selling": "900",
+    "category": "Home Essentials",
+    "type": "Mirrors",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 22,
+    "sourceCell": "C22",
+    "id": "final-store-8bdd197262e8e9436c69a45830d58d1f",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 22,
+      "sourceCell": "C22",
+      "selling": "900"
+    }
+  },
+  {
+    "category": "Home Essentials",
+    "type": "Dustbins",
+    "name": "Dustbin",
+    "size": "01",
+    "unit": "Piece",
+    "selling": "230",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1605
+    ],
+    "sourceIds": [
+      "1790"
+    ],
+    "notes": "Added from corrected price list",
+    "id": "final-8a05b0302db3a251d282e890ff1a4c32",
+    "baseSelling": "230",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 24,
+      "sourceCell": "C24",
+      "selling": "750"
+    }
+  },
+  {
+    "category": "Home Essentials",
+    "type": "Dustbins",
+    "name": "Dustbin",
+    "size": "02",
+    "unit": "Piece",
+    "selling": "250",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1606
+    ],
+    "sourceIds": [
+      "1791"
+    ],
+    "notes": "Added from corrected price list",
+    "id": "final-fb3f60a2d642d616d9111dddec82a8c5",
+    "baseSelling": "250",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 25,
+      "sourceCell": "C25",
+      "selling": "550"
+    }
+  },
+  {
+    "category": "Home Essentials",
+    "type": "Dustbins",
+    "name": "Dustbin",
+    "size": "03",
+    "unit": "Piece",
+    "selling": "550",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1607
+    ],
+    "sourceIds": [
+      "1792"
+    ],
+    "notes": "Added from corrected price list",
+    "id": "final-d4fe9adcb8c15472c38d5e92c872d53a",
+    "baseSelling": "550",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 26,
+      "sourceCell": "C26",
+      "selling": "250"
+    }
+  },
+  {
+    "category": "Home Essentials",
+    "type": "Dustbins",
+    "name": "Dustbin",
+    "size": "04",
+    "unit": "Piece",
+    "selling": "750",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1608
+    ],
+    "sourceIds": [
+      "1793"
+    ],
+    "notes": "Added from corrected price list",
+    "id": "final-6b98e53478f0fd51183c504c09a747f1",
+    "baseSelling": "750",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 27,
+      "sourceCell": "C27",
+      "selling": "230"
+    }
+  },
+  {
+    "name": "Dustbin",
+    "size": "05",
+    "selling": "120",
+    "category": "Home Essentials",
+    "type": "Dustbins",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 28,
+    "sourceCell": "C28",
+    "id": "final-store-e13744bc2fb479062e878c6f5b0ad8d4",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 28,
+      "sourceCell": "C28",
+      "selling": "120"
+    }
+  },
+  {
+    "category": "Home Essentials",
+    "type": "Buckets & Containers",
+    "name": "Bucket",
+    "size": "01",
+    "unit": "Piece",
+    "selling": "300",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1567
+    ],
+    "sourceIds": [
+      "1752"
+    ],
+    "notes": "Added from corrected price list",
+    "id": "final-e2a1019d47084c0fc7545dbab9b4dd25",
+    "baseSelling": "300",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 30,
+      "sourceCell": "C30",
+      "selling": "300"
+    }
+  },
+  {
+    "category": "Home Essentials",
+    "type": "Buckets & Containers",
+    "name": "Bucket",
+    "size": "02",
+    "unit": "Piece",
+    "selling": "250",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1568
+    ],
+    "sourceIds": [
+      "1753"
+    ],
+    "notes": "Added from corrected price list",
+    "id": "final-d299a1345f920df33cdc934b7c8e038c",
+    "baseSelling": "250",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 31,
+      "sourceCell": "C31",
+      "selling": "250"
+    }
+  },
+  {
+    "category": "Home Essentials",
+    "type": "Buckets & Containers",
+    "name": "Bucket",
+    "size": "03",
+    "unit": "Piece",
+    "selling": "200",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1569
+    ],
+    "sourceIds": [
+      "1754"
+    ],
+    "notes": "Added from corrected price list",
+    "id": "final-df0f640ae046185c90e97f6cde3d06e7",
+    "baseSelling": "200",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 32,
+      "sourceCell": "C32",
+      "selling": "200"
+    }
+  },
+  {
+    "category": "Home Essentials",
+    "type": "Buckets & Containers",
+    "name": "Bucket",
+    "size": "04",
+    "unit": "Piece",
+    "selling": "150",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1570
+    ],
+    "sourceIds": [
+      "1755"
+    ],
+    "notes": "Added from corrected price list",
+    "id": "final-e7aaaf1de3eeb639b5d50672b0da7442",
+    "baseSelling": "150",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 33,
+      "sourceCell": "C33",
+      "selling": "150"
+    }
+  },
+  {
+    "name": "Bucket with Cap",
+    "size": "01",
+    "selling": "300",
+    "category": "Home Essentials",
+    "type": "Buckets & Containers",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 34,
+    "sourceCell": "C34",
+    "id": "final-store-72e58dd7db35a2115c80331c9f3a1660",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 34,
+      "sourceCell": "C34",
+      "selling": "300"
+    }
+  },
+  {
+    "name": "Bucket with Cap",
+    "size": "02",
+    "selling": "290",
+    "category": "Home Essentials",
+    "type": "Buckets & Containers",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 35,
+    "sourceCell": "C35",
+    "id": "final-store-6c061a83f144a0168d51a1ac0eb878cd",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 35,
+      "sourceCell": "C35",
+      "selling": "290"
+    }
+  },
+  {
+    "name": "Bucket with Cap",
+    "size": "03",
+    "selling": "280",
+    "category": "Home Essentials",
+    "type": "Buckets & Containers",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 36,
+    "sourceCell": "C36",
+    "id": "final-store-577a2392f0df560893f78808b7668292",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 36,
+      "sourceCell": "C36",
+      "selling": "280"
+    }
+  },
+  {
+    "name": "Bucket with Cap",
+    "size": "04",
+    "selling": "230",
+    "category": "Home Essentials",
+    "type": "Buckets & Containers",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 37,
+    "sourceCell": "C37",
+    "id": "final-store-228a6b11d94422cc8f56b0fb8c3bbda5",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 37,
+      "sourceCell": "C37",
+      "selling": "230"
+    }
+  },
+  {
+    "name": "Bucket with Cap",
+    "size": "05",
+    "selling": "200",
+    "category": "Home Essentials",
+    "type": "Buckets & Containers",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 38,
+    "sourceCell": "C38",
+    "id": "final-store-8931e5cc08e5d1bdb7cb15fa77535db1",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 38,
+      "sourceCell": "C38",
+      "selling": "200"
+    }
+  },
+  {
+    "name": "Bucket with Cap",
+    "size": "06",
+    "selling": "150",
+    "category": "Home Essentials",
+    "type": "Buckets & Containers",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 39,
+    "sourceCell": "C39",
+    "id": "final-store-da6663a97b9d809bda026d2a76fb096f",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 39,
+      "sourceCell": "C39",
+      "selling": "150"
+    }
+  },
+  {
+    "category": "Home Essentials",
+    "type": "Buckets & Containers",
+    "name": "Black bucket",
+    "size": "01",
+    "unit": "Piece",
+    "selling": "250",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1571
+    ],
+    "sourceIds": [
+      "1756"
+    ],
+    "notes": "Added from corrected price list",
+    "id": "final-c5c5698c289a9fb35372dfb5523e48d5",
+    "baseSelling": "250",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 40,
+      "sourceCell": "C40",
+      "selling": "300"
+    }
+  },
+  {
+    "category": "Home Essentials",
+    "type": "Buckets & Containers",
+    "name": "Black bucket",
+    "size": "02",
+    "unit": "Piece",
+    "selling": "200",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1572
+    ],
+    "sourceIds": [
+      "1757"
+    ],
+    "notes": "Added from corrected price list",
+    "id": "final-630c170c53223acb673eff4b8da328d8",
+    "baseSelling": "200",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 41,
+      "sourceCell": "C41",
+      "selling": "220"
+    }
+  },
+  {
+    "category": "Kitchen & Dining",
+    "type": "Mugs",
+    "name": "Mug",
+    "size": "01",
+    "unit": "Piece",
+    "selling": "40",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1573
+    ],
+    "sourceIds": [
+      "1758"
+    ],
+    "notes": "Added from corrected price list",
+    "id": "final-a6a65532ceb0305c97afe9dfd64f6529",
+    "baseSelling": "40",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 43,
+      "sourceCell": "C43",
+      "selling": "40"
+    }
+  },
+  {
+    "category": "Kitchen & Dining",
+    "type": "Mugs",
+    "name": "Mug",
+    "size": "02",
+    "unit": "Piece",
+    "selling": "30",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1574
+    ],
+    "sourceIds": [
+      "1759"
+    ],
+    "notes": "Added from corrected price list",
+    "id": "final-0c3bf624fcd7f135c7423cdfea2f6e6c",
+    "baseSelling": "30",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 44,
+      "sourceCell": "C44",
+      "selling": "50"
+    }
+  },
+  {
+    "name": "Rack",
+    "size": "",
+    "selling": "250",
+    "category": "Home Essentials",
+    "type": "Mugs & Racks",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 45,
+    "sourceCell": "C45",
+    "id": "final-store-102f1c00514cd78fa7a271bebf6d299d",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 45,
+      "sourceCell": "C45",
+      "selling": "250"
+    }
+  },
+  {
+    "name": "Veg Rack",
+    "size": "Type 1",
+    "selling": "600",
+    "category": "Home Essentials",
+    "type": "Mugs & Racks",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 46,
+    "sourceCell": "C46",
+    "id": "final-store-e262a2bfd8cdae84824c644eeecc3179",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 46,
+      "sourceCell": "C46",
+      "selling": "600"
+    }
+  },
+  {
+    "name": "Veg Rack",
+    "size": "Type 2",
+    "selling": "350",
+    "category": "Home Essentials",
+    "type": "Mugs & Racks",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 47,
+    "sourceCell": "C47",
+    "id": "final-store-76fdec045683d78af088495538ef3ff0",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 47,
+      "sourceCell": "C47",
+      "selling": "350"
+    }
+  },
+  {
+    "name": "Veg Rack",
+    "size": "Type 3",
+    "selling": "400",
+    "category": "Home Essentials",
+    "type": "Mugs & Racks",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 48,
+    "sourceCell": "C48",
+    "id": "final-store-916801d57d9785fb20f38a46e56e4b43",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 48,
+      "sourceCell": "C48",
+      "selling": "400"
+    }
+  },
+  {
+    "category": "Cleaning Tools",
+    "type": "Mops",
+    "name": "Mop",
+    "size": "01",
+    "unit": "Piece",
+    "selling": "150",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1587
+    ],
+    "sourceIds": [
+      "1772"
+    ],
+    "notes": "Added from corrected price list",
+    "id": "final-39fd9707cd94ea8924b7fdda8b77145c",
+    "baseSelling": "150",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 50,
+      "sourceCell": "C50",
+      "selling": "350"
+    }
+  },
+  {
+    "category": "Cleaning Tools",
+    "type": "Mops",
+    "name": "Mop",
+    "size": "02",
+    "unit": "Piece",
+    "selling": "250",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1588
+    ],
+    "sourceIds": [
+      "1773"
+    ],
+    "notes": "Added from corrected price list",
+    "id": "final-4922df8d8c978ddf84e135d4b12eb196",
+    "baseSelling": "250",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 51,
+      "sourceCell": "C51",
+      "selling": "300"
+    }
+  },
+  {
+    "category": "Cleaning Tools",
+    "type": "Mops",
+    "name": "Mop",
+    "size": "03",
+    "unit": "Piece",
+    "selling": "300",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1589
+    ],
+    "sourceIds": [
+      "1774"
+    ],
+    "notes": "Added from corrected price list",
+    "id": "final-f82bd56c951773dff7b13cd95d4cf9bf",
+    "baseSelling": "300",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 52,
+      "sourceCell": "C52",
+      "selling": "250"
+    }
+  },
+  {
+    "category": "Cleaning Tools",
+    "type": "Mops",
+    "name": "Mop",
+    "size": "04",
+    "unit": "Piece",
+    "selling": "350",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1590
+    ],
+    "sourceIds": [
+      "1775"
+    ],
+    "notes": "Added from corrected price list",
+    "id": "final-0a04d1672d2af98883e4be1ecc2e0bd3",
+    "baseSelling": "350",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 53,
+      "sourceCell": "C53",
+      "selling": "200"
+    }
+  },
+  {
+    "name": "Mop",
+    "size": "05",
+    "selling": "150",
+    "category": "Cleaning Tools",
+    "type": "Mops",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 54,
+    "sourceCell": "C54",
+    "id": "final-store-13951ec37fe544c7cf84b40a62d5507a",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 54,
+      "sourceCell": "C54",
+      "selling": "150"
+    }
+  },
+  {
+    "name": "Kati",
+    "size": "01",
+    "selling": "600",
+    "category": "Cleaning Tools",
+    "type": "Cleaning Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 55,
+    "sourceCell": "C55",
+    "id": "final-store-90cb8ee91dc492ca90650ead81bec160",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 55,
+      "sourceCell": "C55",
+      "selling": "600"
+    }
+  },
+  {
+    "name": "Kati",
+    "size": "02",
+    "selling": "550",
+    "category": "Cleaning Tools",
+    "type": "Cleaning Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 56,
+    "sourceCell": "C56",
+    "id": "final-store-b8fb8afac42ed0b60811e6eba1c10bfe",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 56,
+      "sourceCell": "C56",
+      "selling": "550"
+    }
+  },
+  {
+    "name": "Kati",
+    "size": "03",
+    "selling": "500",
+    "category": "Cleaning Tools",
+    "type": "Cleaning Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 57,
+    "sourceCell": "C57",
+    "id": "final-store-f428030b7867e261d9a0240fcc1ea810",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 57,
+      "sourceCell": "C57",
+      "selling": "500"
+    }
+  },
+  {
+    "name": "Kati",
+    "size": "04",
+    "selling": "400",
+    "category": "Cleaning Tools",
+    "type": "Cleaning Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 58,
+    "sourceCell": "C58",
+    "id": "final-store-1055f80d6da17e7eaced9e05af43cfa3",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 58,
+      "sourceCell": "C58",
+      "selling": "400"
+    }
+  },
+  {
+    "category": "Cleaning Tools",
+    "type": "Wipers",
+    "name": "Wiper",
+    "size": "01",
+    "unit": "Piece",
+    "selling": "150",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1596
+    ],
+    "sourceIds": [
+      "1781"
+    ],
+    "notes": "Added from corrected price list",
+    "id": "final-2a3e7483cfec459c8e9adc692e756a99",
+    "baseSelling": "150",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 59,
+      "sourceCell": "C59",
+      "selling": "350"
+    }
+  },
+  {
+    "category": "Cleaning Tools",
+    "type": "Wipers",
+    "name": "Wiper",
+    "size": "02",
+    "unit": "Piece",
+    "selling": "200",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1597
+    ],
+    "sourceIds": [
+      "1782"
+    ],
+    "notes": "Added from corrected price list",
+    "id": "final-70e652a43d7327e3f2ff4a3684596295",
+    "baseSelling": "200",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 60,
+      "sourceCell": "C60",
+      "selling": "300"
+    }
+  },
+  {
+    "category": "Cleaning Tools",
+    "type": "Wipers",
+    "name": "Wiper",
+    "size": "03",
+    "unit": "Piece",
+    "selling": "300",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1598
+    ],
+    "sourceIds": [
+      "1783"
+    ],
+    "notes": "Added from corrected price list",
+    "id": "final-f300fd212fa0ba1b8bd0ee2e0c0f9730",
+    "baseSelling": "300",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 61,
+      "sourceCell": "C61",
+      "selling": "200"
+    }
+  },
+  {
+    "category": "Cleaning Tools",
+    "type": "Wipers",
+    "name": "Wiper",
+    "size": "04",
+    "unit": "Piece",
+    "selling": "350",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1599
+    ],
+    "sourceIds": [
+      "1784"
+    ],
+    "notes": "Added from corrected price list",
+    "id": "final-558322ad293e22c99b0bcc0712d285c2",
+    "baseSelling": "350",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 62,
+      "sourceCell": "C62",
+      "selling": "150"
+    }
+  },
+  {
+    "category": "Cleaning Tools",
+    "type": "Brushes",
+    "name": "Long Brush",
+    "size": "01",
+    "unit": "Piece",
+    "selling": "280",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1593
+    ],
+    "sourceIds": [
+      "1778"
+    ],
+    "notes": "Added from corrected price list",
+    "id": "final-73135e5c6054a99776d98cfbe6592ec6",
+    "baseSelling": "280",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 63,
+      "sourceCell": "C63",
+      "selling": "300"
+    }
+  },
+  {
+    "category": "Cleaning Tools",
+    "type": "Brushes",
+    "name": "Long Brush",
+    "size": "02",
+    "unit": "Piece",
+    "selling": "250",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1594
+    ],
+    "sourceIds": [
+      "1779"
+    ],
+    "notes": "Added from corrected price list",
+    "id": "final-636ddfd88832692fd73f4bd77e5bdd82",
+    "baseSelling": "250",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 64,
+      "sourceCell": "C64",
+      "selling": "280"
+    }
+  },
+  {
+    "category": "Cleaning Tools",
+    "type": "Brushes",
+    "name": "Long Brush",
+    "size": "03",
+    "unit": "Piece",
+    "selling": "220",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceRows": [
+      1595
+    ],
+    "sourceIds": [
+      "1780"
+    ],
+    "notes": "Added from corrected price list",
+    "id": "final-91ca2efe43fddd86b942821b688c9deb",
+    "baseSelling": "220",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 65,
+      "sourceCell": "C65",
+      "selling": "220"
+    }
+  },
+  {
+    "name": "Hard Fork",
+    "size": "01",
+    "selling": "130",
+    "category": "Cleaning Tools",
+    "type": "Cleaning Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 66,
+    "sourceCell": "C66",
+    "id": "final-store-d27447a2b3d9eeee902c39f6268e7a80",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 66,
+      "sourceCell": "C66",
+      "selling": "130"
+    }
+  },
+  {
+    "name": "Hard Fork",
+    "size": "02",
+    "selling": "250",
+    "category": "Cleaning Tools",
+    "type": "Cleaning Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 67,
+    "sourceCell": "C67",
+    "id": "final-store-634911984ccb78718e70099a272b0f94",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 67,
+      "sourceCell": "C67",
+      "selling": "250"
+    }
+  },
+  {
+    "name": "Hard Fork",
+    "size": "03",
+    "selling": "300",
+    "category": "Cleaning Tools",
+    "type": "Cleaning Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 68,
+    "sourceCell": "C68",
+    "id": "final-store-b18a6cd7b40929fa935ea5d7214649f4",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 68,
+      "sourceCell": "C68",
+      "selling": "300"
+    }
+  },
+  {
+    "name": "Hard Fork",
+    "size": "04",
+    "selling": "200",
+    "category": "Cleaning Tools",
+    "type": "Cleaning Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 69,
+    "sourceCell": "C69",
+    "id": "final-store-63a0d7d4714ecadc75be72164623cf84",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 69,
+      "sourceCell": "C69",
+      "selling": "200"
+    }
+  },
+  {
+    "name": "Cloth Pin",
+    "size": "01",
+    "selling": "40",
+    "category": "Cleaning Tools",
+    "type": "Cleaning Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 70,
+    "sourceCell": "C70",
+    "id": "final-store-c4feb7df48a148a197ba1841b9b6d515",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 70,
+      "sourceCell": "C70",
+      "selling": "40"
+    }
+  },
+  {
+    "name": "Cloth Pin",
+    "size": "02",
+    "selling": "70",
+    "category": "Cleaning Tools",
+    "type": "Cleaning Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 71,
+    "sourceCell": "C71",
+    "id": "final-store-4bae0d4281f12f2b5f8cb2949cae7227",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 71,
+      "sourceCell": "C71",
+      "selling": "70"
+    }
+  },
+  {
+    "name": "Pikas — Wooden",
+    "size": "",
+    "selling": "770",
+    "category": "Tools",
+    "type": "Garden Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 73,
+    "sourceCell": "C73",
+    "id": "final-store-0565452ebbadc727b2dcb6a71950bfa8",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 73,
+      "sourceCell": "C73",
+      "selling": "770"
+    }
+  },
+  {
+    "name": "Pikas — Metal",
+    "size": "",
+    "selling": "750",
+    "category": "Tools",
+    "type": "Garden Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 74,
+    "sourceCell": "C74",
+    "id": "final-store-e7caa5d3e06f8704a6233d4d310753f2",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 74,
+      "sourceCell": "C74",
+      "selling": "750"
+    }
+  },
+  {
+    "name": "Garden Pikas",
+    "size": "",
+    "selling": "350",
+    "category": "Tools",
+    "type": "Garden Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 75,
+    "sourceCell": "C75",
+    "id": "final-store-64d27de0ad0bd03ac9dbb9b8ea515d82",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 75,
+      "sourceCell": "C75",
+      "selling": "350"
+    }
+  },
+  {
+    "name": "Kottu",
+    "size": "Standard",
+    "selling": "600",
+    "category": "Tools",
+    "type": "Garden Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 76,
+    "sourceCell": "C76",
+    "id": "final-store-71e117ae9b5a67f5114f15503958fbf1",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 76,
+      "sourceCell": "C76",
+      "selling": "600"
+    }
+  },
+  {
+    "name": "Kottu — Wood",
+    "size": "",
+    "selling": "560",
+    "category": "Tools",
+    "type": "Garden Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 77,
+    "sourceCell": "C77",
+    "id": "final-store-7f4df5ae1c4f1e8820f0fc7ccc2ae79c",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 77,
+      "sourceCell": "C77",
+      "selling": "560"
+    }
+  },
+  {
+    "name": "Kottu — Metal",
+    "size": "",
+    "selling": "450",
+    "category": "Tools",
+    "type": "Garden Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 78,
+    "sourceCell": "C78",
+    "id": "final-store-8879f61f3d435c830140b85da9318a7f",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 78,
+      "sourceCell": "C78",
+      "selling": "450"
+    }
+  },
+  {
+    "name": "Kottu — Small",
+    "size": "",
+    "selling": "400",
+    "category": "Tools",
+    "type": "Garden Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 79,
+    "sourceCell": "C79",
+    "id": "final-store-c4f28c86013899f0ab3dc756f5af14f7",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 79,
+      "sourceCell": "C79",
+      "selling": "400"
+    }
+  },
+  {
+    "name": "Kottu — Garden",
+    "size": "",
+    "selling": "350",
+    "category": "Tools",
+    "type": "Garden Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 80,
+    "sourceCell": "C80",
+    "id": "final-store-613fad21ad59eb3484f78160dba60890",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 80,
+      "sourceCell": "C80",
+      "selling": "350"
+    }
+  },
+  {
+    "name": "Damas",
+    "size": "",
+    "selling": "1100",
+    "category": "Tools",
+    "type": "Garden Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 81,
+    "sourceCell": "C81",
+    "id": "final-store-79e22e9dfe138b172173bd47db3fe37f",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 81,
+      "sourceCell": "C81",
+      "selling": "1100"
+    }
+  },
+  {
+    "name": "Bala Kol",
+    "size": "Type 1",
+    "selling": "368",
+    "category": "Tools",
+    "type": "Garden Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 82,
+    "sourceCell": "C82",
+    "id": "final-store-90b1aeeef073ed988e3aa48a1e2540dc",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 82,
+      "sourceCell": "C82",
+      "selling": "368"
+    }
+  },
+  {
+    "name": "Bala Kol",
+    "size": "Type 2",
+    "selling": "250",
+    "category": "Tools",
+    "type": "Garden Tools",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 83,
+    "sourceCell": "C83",
+    "id": "final-store-1d766fc70c9c6c1ef2d7e03af388abf8",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 83,
+      "sourceCell": "C83",
+      "selling": "250"
+    }
+  },
+  {
+    "name": "Garbage Bag",
+    "size": "S",
+    "selling": "70",
+    "category": "Home Essentials",
+    "type": "Garbage Bags",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 85,
+    "sourceCell": "C85",
+    "id": "final-store-0aa43cb93e972ab30659a7d3cee0c1f4",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 85,
+      "sourceCell": "C85",
+      "selling": "70"
+    }
+  },
+  {
+    "name": "Garbage Bag",
+    "size": "M",
+    "selling": "90",
+    "category": "Home Essentials",
+    "type": "Garbage Bags",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 86,
+    "sourceCell": "C86",
+    "id": "final-store-844393be11e7c8fe78f545cac9098ba3",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 86,
+      "sourceCell": "C86",
+      "selling": "90"
+    }
+  },
+  {
+    "name": "Garbage Bag",
+    "size": "L",
+    "selling": "118",
+    "category": "Home Essentials",
+    "type": "Garbage Bags",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 87,
+    "sourceCell": "C87",
+    "id": "final-store-4b01855bf8a2841ac838e344a4aca541",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 87,
+      "sourceCell": "C87",
+      "selling": "118"
+    }
+  },
+  {
+    "name": "Garbage Bag",
+    "size": "Extra L",
+    "selling": "175",
+    "category": "Home Essentials",
+    "type": "Garbage Bags",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 88,
+    "sourceCell": "C88",
+    "id": "final-store-78870f977bd6510ca100e05c3b8d2e33",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 88,
+      "sourceCell": "C88",
+      "selling": "175"
+    }
+  },
+  {
+    "name": "Aquatics Seat Cover",
+    "size": "",
+    "selling": "790",
+    "category": "Plumbing Accessories",
+    "type": "Seat Covers",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 90,
+    "sourceCell": "C90",
+    "id": "final-store-7a4141e3961945fb5734c851e3933826",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 90,
+      "sourceCell": "C90",
+      "selling": "790"
+    }
+  },
+  {
+    "name": "WaterTech Seat Cover",
+    "size": "",
+    "selling": "866",
+    "category": "Plumbing Accessories",
+    "type": "Seat Covers",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 91,
+    "sourceCell": "C91",
+    "id": "final-store-96451f32de9a1bd504c97e5ce0f2c855",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 91,
+      "sourceCell": "C91",
+      "selling": "866"
+    }
+  },
+  {
+    "name": "Swizzer Seat Cover",
+    "size": "",
+    "selling": "440",
+    "category": "Plumbing Accessories",
+    "type": "Seat Covers",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 92,
+    "sourceCell": "C92",
+    "id": "final-store-5ba8080638730717b36caf03cb579a15",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 92,
+      "sourceCell": "C92",
+      "selling": "440"
+    }
+  },
+  {
+    "name": "Local Seat Cover",
+    "size": "",
+    "selling": "500",
+    "category": "Plumbing Accessories",
+    "type": "Seat Covers",
+    "unit": "Piece",
+    "purchase": "",
+    "gst": "18",
+    "stock": "",
+    "minimum": "",
+    "sourceSheet": "Household Items",
+    "sourceRow": 93,
+    "sourceCell": "C93",
+    "id": "final-store-a65691b2e489417fd803866bc1a31325",
+    "storeSource": {
+      "sourceSheet": "Household Items",
+      "sourceRow": 93,
+      "sourceCell": "C93",
+      "selling": "500"
+    }
+  }
+]
