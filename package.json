@@ -1,0 +1,17 @@
+{
+  "name": "hardwareshoppos-catalog-site",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test",
+    "serve": "node serve.mjs",
+    "preview:ordering": "node scripts/start-ordering-preview.mjs",
+    "prepare:release": "node scripts/prepare-release.mjs",
+    "export:source": "node scripts/export-public-source.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

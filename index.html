@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en-IN" data-mode="catalog-only">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#173d36">
+  <meta name="description" content="HardwareShopPOS item catalog and selling prices">
+  <title>HardwareShopPOS · Items &amp; Prices</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.mjs"></script>
+</head>
+<body>
+  <a class="skip" href="#products">Skip to items</a>
+  <header class="wrap">
+    <a class="brand" href="/" aria-label="HardwareShopPOS catalog home"><span class="monogram" aria-hidden="true">H</span><strong>HardwareShopPOS</strong></a>
+    <label class="search-label" for="search">Search items or sizes</label>
+    <div class="search-wrap"><span aria-hidden="true" class="search-symbol">⌕</span><input id="search" type="search" placeholder="Search items or sizes" autocomplete="off" enterkeyhint="search"><button id="clear-search" class="plain" aria-label="Clear search" hidden>Clear</button></div>
+  </header>
+  <main class="wrap">
+    <p id="catalog-status" class="status" role="status">Loading catalog…</p>
+    <div id="catalog-error" class="notice" role="alert" hidden>The catalog is unavailable. Please ask the shop team.</div>
+    <section id="products" class="products" aria-label="Shop items"></section>
+    <button id="load-more" class="more" hidden>Show more</button>
+    <p class="counter-note">Online ordering is not enabled. Please ask the shop team to place an order.</p>
+  </main>
+</body>
+</html>

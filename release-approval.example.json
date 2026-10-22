@@ -1,0 +1,17 @@
+{
+  "accountId": "",
+  "pagesProject": "",
+  "websiteUrl": "",
+  "accountApproved": false,
+  "projectApproved": false,
+  "contentApproved": false,
+  "deploymentApproved": false,
+  "freePlanVerified": false,
+  "localAcceptancePassed": false,
+  "localTestsDeferredByOwner": false,
+  "testDeferralScope": "",
+  "catalogSha256": "",
+  "artifactManifestSha256": "",
+  "approvedAt": "",
+  "deploymentId": ""
+}

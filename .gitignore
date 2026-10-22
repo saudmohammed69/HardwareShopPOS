@@ -1,0 +1,13 @@
+dist/
+node_modules/
+.wrangler/
+.dev.vars
+.env
+.env.*
+*.log
+release-local/
+qr-output/
+__pycache__/
+*.pyc
+public/catalog-approval.json
+release-approval.json
