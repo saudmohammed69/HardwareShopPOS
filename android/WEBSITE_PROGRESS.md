@@ -3,6 +3,8 @@
 
 **PUBLISHED: https://hardwareshoppos.pages.dev/ · CATALOG ONLY · QR PNG/PDF GENERATED.** Owner approved all 1,478 published rows and confirmed current prices. Actual deployment `db8ed9c4-89dd-4809-ba79-31fc37afed28`; exact hosted asset/catalog hashes, HTTPS, CSP and disabled API routes verified. Full tests remain owner-deferred; physical scanning and POS ordering remain unverified. **83.5% unchanged**: deployment/QR substeps do not complete the remaining weighted ordering/security/native acceptance targets. See the current publication entry in `WEBSITE_FINAL_ENGINEERING_RESULTS.md` for hashes, commands and evidence. No paid plan, live backend, production data or real device was activated. Earlier sections below are historical.
 <!-- END_CATALOG_PUBLICATION_20261022 -->
+**GitHub source published — 22 October 2026:** Public `main` verified at `3974c6a` (531 files): Android and website source, owner-approved shop catalog data, technical reports, and catalog-only QR. Clean history; credentials/configuration/database/backups/build outputs excluded. Owner-approved catalog purchase/stock fields are public in Android source; the deployed website remains selling-price-only. Tests remain deferred and progress stays 83.5%.
+
 
 <!-- DEFERRED_VERIFICATION_CURRENT -->
 ## Current implementation — tests deferred by owner
